@@ -1,0 +1,140 @@
+application.config-server.keycloak-config.client-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Client Secret"
+  description: "Client secret value"
+  sectionName: "CLIENT_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "client-secret"
+application.keycloak-admin.app-resource-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource Secret"
+  description: "Keycloak App resource secret value"
+  sectionName: "APP_RESOURCE_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-resource-secret"
+application.keycloak-admin.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Password"
+  description: "Keycloak Admin password value"
+  sectionName: "KEYCLOAK_ADMIN_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-password"
+application.keycloak-admin.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Username"
+  description: "Keycloak Admin username value"
+  sectionName: "KEYCLOAK_ADMIN_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-username"
+application.security.key:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Key"
+  description: "Key value"
+  sectionName: "KEY"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "key"
+application.sis-phone-properties.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Sisphone Password"
+  description: "Sisphone password value"
+  sectionName: "SISPHONE_PASSWORD"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+application.sis-phone-properties.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Sisphone Password"
+  description: "Sisphone password value"
+  sectionName: "SISPHONE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "sisphone-password"
+application.sis-phone-properties.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Sisphone Password"
+  description: "Sisphone password value"
+  sectionName: "SISPHONE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "sisphone-url"
+application.sis-phone-properties.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Sisphone Password"
+  description: "Sisphone password value"
+  sectionName: "SISPHONE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "sisphone-username"
+security.api-access.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Access Token"
+  description: "Access token value"
+  sectionName: "ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "access-token"
+spring.datasource.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Password"
+  description: "Datasource password value"
+  sectionName: "DATASOURCE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-password"
+spring.datasource.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Username"
+  description: "Datasource username value"
+  sectionName: "DATASOURCE_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-username"
+spring.elasticsearch.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Password"
+  description: "Elasticsearch password value"
+  sectionName: "ELASTICSEARCH_PASSWORD"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "elasticsearch-password"
+spring.elasticsearch.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Username"
+  description: "Elasticsearch username value"
+  sectionName: "ELASTICSEARCH_USERNAME"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "elasticsearch-username"
