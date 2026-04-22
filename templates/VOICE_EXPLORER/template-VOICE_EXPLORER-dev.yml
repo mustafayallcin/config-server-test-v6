@@ -1,0 +1,50 @@
+application.keycloak-admin.app-resource-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource Secret"
+  description: "Keycloak App resource secret value"
+  sectionName: "APP_RESOURCE_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-resource-secret"
+application.keycloak-admin.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Password"
+  description: "Keycloak Admin password value"
+  sectionName: "KEYCLOAK_ADMIN_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-password"
+application.keycloak-admin.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Username"
+  description: "Keycloak Admin username value"
+  sectionName: "KEYCLOAK_ADMIN_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-username"
+eureka.client.service-url.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Service Url Password"
+  description: "Service url password value"
+  sectionName: "SERVICE_URL_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "admin"
+eureka.client.service-url.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Service Url Username"
+  description: "Service url username value"
+  sectionName: "SERVICE_URL_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "admin"
