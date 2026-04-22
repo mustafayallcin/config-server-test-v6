@@ -1,0 +1,80 @@
+application.keycloak-admin.app-resource-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource Secret"
+  description: "Keycloak App resource secret value"
+  sectionName: "APP_RESOURCE_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-resource-secret"
+application.keycloak-admin.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Password"
+  description: "Keycloak Admin password value"
+  sectionName: "KEYCLOAK_ADMIN_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-admin-password"
+application.keycloak-admin.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Username"
+  description: "Keycloak Admin username value"
+  sectionName: "KEYCLOAK_ADMIN_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-admin-username"
+security.api-access.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "API Access Token"
+  description: "Token for API access"
+  sectionName: "ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "access-token"
+spring.datasource.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Password"
+  description: "Database password"
+  sectionName: "DATASOURCE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-password"
+spring.datasource.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Username"
+  description: "Database username"
+  sectionName: "DATASOURCE_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-username"
+spring.mail.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Mail Password"
+  description: "SMTP Mail password"
+  sectionName: "MAIL_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "mail-password"
+spring.mail.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Mail Username"
+  description: "SMTP Mail username"
+  sectionName: "MAIL_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "mail-username"
