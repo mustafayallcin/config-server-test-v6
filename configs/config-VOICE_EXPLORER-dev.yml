@@ -1,0 +1,10 @@
+application:
+  keycloak-admin:
+    app-resource-secret: "{cipher}cef7eb8f9afa74a170b7d0b23dfeab60dc7fa7dd8d8a5cc5308bdf71611759f8beb9864b483cc87b42ae32c058fe2922"
+    password: "{cipher}85a0e743507a946052856ba38a3b0fdbb2dc8fbb185cfecf75d38c86d5eb733da014cb4bb5a06ffc692552475c5fa55a"
+    username: "{cipher}de835fe38c35a0a2631e425ba37645304618484e0a4043e85456dbf76f1dd9bd07e57be3e6bdba8771e1c3ef86d32428"
+eureka:
+  client:
+    service-url:
+      password: "{cipher}9b66ef11c9b0309e8df37f3d9e0ea2b16d36cdb973889d0068a57a8156d86c76"
+      username: "{cipher}89923992c75cf9af697ebbab05c429ca43a6146ff7623d49955038eacdf6b002"
