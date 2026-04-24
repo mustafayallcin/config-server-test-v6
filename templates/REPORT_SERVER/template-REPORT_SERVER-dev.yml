@@ -1,0 +1,90 @@
+application.encryption.key:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Encryption Key"
+  description: "Encryption key value"
+  sectionName: "ENCRYPTION_KEY"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "encryption-key"
+application.keycloak-admin.app-resource-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource Secret"
+  description: "Keycloak App resource secret value"
+  sectionName: "APP_RESOURCE_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-resource-secret"
+application.keycloak-admin.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Password"
+  description: "Keycloak Admin password value"
+  sectionName: "KEYCLOAK_ADMIN_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-password"
+application.keycloak-admin.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Username"
+  description: "Keycloak Admin username value"
+  sectionName: "KEYCLOAK_ADMIN_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-username"
+spring.datasource.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Password"
+  description: "Database password value"
+  sectionName: "DATASOURCE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-password"
+spring.datasource.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Url"
+  description: "Database url value"
+  sectionName: "DATASOURCE_URL"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-url"
+spring.datasource.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Username"
+  description: "Database username value"
+  sectionName: "DATASOURCE_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-username"
+spring.mail.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Mail Password"
+  description: "SMTP Mail password value"
+  sectionName: "MAIL_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "mail-password"
+spring.mail.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Mail Username"
+  description: "SMTP Mail username value"
+  sectionName: "MAIL_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "mail-username"
