@@ -1,0 +1,40 @@
+spring.datasource.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Password"
+  description: "Database password value"
+  sectionName: "DATASOURCE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-password"
+spring.datasource.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Url"
+  description: "Database url value"
+  sectionName: "DATASOURCE_URL"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-url"
+spring.datasource.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Username"
+  description: "Database username value"
+  sectionName: "DATASOURCE_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "datasource-username"
+spring.security.oauth2.client.registration.oidc.client-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "OIDC Client Secret"
+  description: "OAuth2 OIDC client secret value"
+  sectionName: "OIDC_CLIENT_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "oidc-client-secret"
