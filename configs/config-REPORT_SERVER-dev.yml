@@ -7,9 +7,9 @@ application:
     username: "{cipher}f120524e10bb628016dfbf6be15f79a54be432b8a4ab0d0a60df676b711da3ce"
 spring:
   datasource:
-    password: "{cipher}29f34e6d6531d89d3c4d268d21a26929abf2cc15ecde660ae12db67ad57b7cac"
-    url: "jdbc:mysql://localhost:3307/reportnew?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
-    username: "{cipher}b2fa5508713c6fa36bc1f2918a2891c1dc2f596a3e2c94b1561e5e1ca0a678d1"
+    password: "{cipher}f1455e18058964511f49a69c5d8bd5fb88d32fe19473144e48fda69c16913324"
+    url: "jdbc:sqlserver://localhost:1433;database=reportserver-v2;encrypt=false"
+    username: "{cipher}0cdcee084447835596e28138796d01b493a00eee4e4faef29e02a7773c2ba096"
   mail:
     password: "{cipher}f17e7f0194597033fa7b33bf255ab428666e5e8ca81d0bd2a6c8a4b7b426177e"
     username: "{cipher}0a18649cf85d50d7f89181bda881899e114412fa014ef8323e534272c78a6de17cb625677ef36b36afa46443e83c5f2c"
