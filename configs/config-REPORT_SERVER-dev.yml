@@ -1,0 +1,15 @@
+application:
+  encryption:
+    key: "{cipher}13c8c0f0b1fedef5468175fd0688c6fb78abe5fc9fac053dba09050cbc4b4b52eb6e2c2b98d15194ccd6e4e111019ead9500e9b4ef5e8481c88e8fdd6588f2f5"
+  keycloak-admin:
+    app-resource-secret: "{cipher}2041d51f1a9740186d407bfd214a3ca7db2474d58179b85157ab9bf4e32b9b084073e9183ab38179b2d3ae881a0a55caef45d6d3946da040ad3d8016bc051585"
+    password: "{cipher}e90a310c2c8a1dceb5277733ef15b9cf939ad0d57c1708582895248f647473c1"
+    username: "{cipher}f120524e10bb628016dfbf6be15f79a54be432b8a4ab0d0a60df676b711da3ce"
+spring:
+  datasource:
+    password: "{cipher}29f34e6d6531d89d3c4d268d21a26929abf2cc15ecde660ae12db67ad57b7cac"
+    url: "jdbc:mysql://localhost:3307/reportnew?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
+    username: "{cipher}b2fa5508713c6fa36bc1f2918a2891c1dc2f596a3e2c94b1561e5e1ca0a678d1"
+  mail:
+    password: "{cipher}f17e7f0194597033fa7b33bf255ab428666e5e8ca81d0bd2a6c8a4b7b426177e"
+    username: "{cipher}0a18649cf85d50d7f89181bda881899e114412fa014ef8323e534272c78a6de17cb625677ef36b36afa46443e83c5f2c"
