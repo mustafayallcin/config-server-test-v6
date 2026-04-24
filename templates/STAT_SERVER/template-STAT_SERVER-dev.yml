@@ -1,0 +1,20 @@
+security.api-access.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "API Access Token"
+  description: "Token for API access"
+  sectionName: "ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "access-token"
+spring.security.oauth2.client.registration.oidc.client-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "OIDC Client Secret"
+  description: "OAuth2 OIDC client secret value"
+  sectionName: "OIDC_CLIENT_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "oidc-client-secret"
