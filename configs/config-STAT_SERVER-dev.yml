@@ -1,0 +1,10 @@
+security:
+  api-access:
+    access-token: "{cipher}d040416e6efd4083c89bdf29cd6fc6f31a9f2bfe1b2a49ca7e8d7a84b95492c5df780b6689ba93d50cebabfc7c00e721053e24f6560578beb78cefe0921034b8"
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          oidc:
+            client-secret: "{cipher}7e276693e7051f96589f10b3968ba0790d83a556009e82090ec895556164b644c5f38c34ccb82f8d67dfca495390e7a804dac631ccb06fbc0784f502281a9422"
