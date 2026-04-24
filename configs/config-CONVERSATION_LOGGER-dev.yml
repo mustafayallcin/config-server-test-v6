@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    password: "{cipher}77ec4b0dbc223e23afc62053ac0c161dad15eb7920f70713d7a082132f8fcc34"
+    url: "jdbc:sqlserver://localhost:1433;database=Test04-SisVoiceCC;encrypt=true;trustServerCertificate=true"
+    username: "{cipher}154d1a43a69a433a5c015f8e0648689193bd6708e455c94736ed1519fb7e87a9"
+  security:
+    oauth2:
+      client:
+        registration:
+          oidc:
+            client-secret: "{cipher}31b99ad3bc0934ad9881a77d85a1c99314a5b81948ac440984677eaf5f5da593974a60bc49eaf1c9c05bff9a8980ef31e408d0522bbc658fcc6c21ad369dc84b"
