@@ -1,0 +1,40 @@
+application:
+  microservice-configuration:
+    hazelcast:
+      native-client:
+        password: "{cipher}bb0997d451f1bf85304a8e40b7c6a9676d212db68da92d8d0ea4cafabc88c05a"
+        url: "localhost:5701"
+        username: "{cipher}73148a8ab64ca7d99bee5d7250431c2069fa6f6dd3894eec45d691c83be21af7"
+cron-job:
+  initialize-agent-aggregation-15-min-cron: "0 6/15 * * * ?"
+  initialize-agent-session-aggregation-15-min-cron: "0 4/15 * * * ?"
+  initialize-agent-sub-type-aggregation-15-min-cron: "0 8/15 * * * ?"
+  initialize-queue-aggregation-15-min-cron: "0 7/15 * * * ?"
+eureka:
+  client:
+    service-url:
+      defaultZone: "{cipher}9789d818979012733cad0d956a2e91e6732f745d131c85bfc17ab0c820a50ef15926adc0896f7325e34d0269dfbcd6eaa2af4a8cc3636ebba03a82a84b805ae7"
+kafka:
+  agentMessageTopic: "AGENT_MESSAGE_TOPIC"
+  bootstrap-servers: "localhost:9092"
+  callMessageTopic: "CALL_MESSAGE_TOPIC"
+  fromConversationLoggerToMediaProcessorTopic: "FROM_CONVERSATION_LOGGER_TO_MEDIA_PROCESSOR_TOPIC"
+  fromMediaProcessorToConversationLoggerTopic: "FROM_MEDIA_PROCESSOR_TO_CONVERSATION_LOGGER_TOPIC"
+  generalMessageTopic: "GENERAL_MESSAGE_TOPIC"
+server:
+  port: 26083
+spring:
+  datasource:
+    password: "{cipher}27699f05ac300965e4f04157318e18bdafdaa495242d5a1cc0db6889530cf48e"
+    url: "jdbc:sqlserver://localhost:1433;database=Test04-SisVoiceCC;encrypt=true;trustServerCertificate=true"
+    username: "{cipher}f42b2e0e2fc2d4d67ccfc8d865028525ee721604f2d584706325ab5b1ff82769"
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+        registration:
+          oidc:
+            client-id: "chatbot"
+            client-secret: "{cipher}6d6397a4ac516536429687cf938cfef915573edaa2f395cc6b228450b9b9e122e5b1582f68d50710d903ba0d77319fcd6b0b7a662dac8db52415071589e45c03"
