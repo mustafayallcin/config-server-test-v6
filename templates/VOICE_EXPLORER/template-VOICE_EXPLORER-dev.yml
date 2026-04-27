@@ -17,7 +17,7 @@ application.auto-sign.redirect-url:
   encrypted: false
   rule: null
   restartRequired: false
-  defaultValue: "https://example.com"
+  defaultValue: "https://google.com"
 application.external-project-redirect-properties[0].name:
   configValueCount: "SINGLE"
   configValueType: "STRING"
@@ -148,7 +148,7 @@ application.keycloak-admin.server-url:
   encrypted: false
   rule: null
   restartRequired: true
-  defaultValue: "https://keycloak.example.com"
+  defaultValue: "https://sistas-keycloak.sistas.com.tr"
 application.keycloak-admin.trusted-audiences:
   configValueCount: "LIST"
   configValueType: "STRING"
@@ -204,7 +204,7 @@ eureka.client.service-url.defaultZone:
   encrypted: false
   rule: null
   restartRequired: true
-  defaultValue: "http://admin:password@localhost:8761/eureka/"
+  defaultValue: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
 jhipster.gateway.rate-limiting.duration-in-seconds:
   configValueCount: "SINGLE"
   configValueType: "LONG"
@@ -246,46 +246,6 @@ server.port:
   rule: null
   restartRequired: true
   defaultValue: 8080
-spring.cloud.config.label:
-  configValueCount: "SINGLE"
-  configValueType: "STRING"
-  displayName: "Config Server Label (Branch/Version)"
-  description: "Git branch, tag or commit label to fetch configuration from"
-  sectionName: "CONFIG_SERVER_LABEL"
-  encrypted: false
-  rule: null
-  restartRequired: true
-  defaultValue: "main"
-spring.cloud.config.password:
-  configValueCount: "SINGLE"
-  configValueType: "STRING"
-  displayName: "Config Server Password"
-  description: "Basic auth password for connecting to the Spring Cloud Config Server"
-  sectionName: "CONFIG_SERVER_PASSWORD"
-  encrypted: true
-  rule: null
-  restartRequired: true
-  defaultValue: "config-server-password"
-spring.cloud.config.uri:
-  configValueCount: "SINGLE"
-  configValueType: "STRING"
-  displayName: "Config Server URI"
-  description: "Base URL of the Spring Cloud Config Server instance"
-  sectionName: "CONFIG_SERVER_URI"
-  encrypted: false
-  rule: null
-  restartRequired: true
-  defaultValue: "http://localhost:8761/config"
-spring.cloud.config.username:
-  configValueCount: "SINGLE"
-  configValueType: "STRING"
-  displayName: "Config Server Username"
-  description: "Basic auth username for connecting to the Spring Cloud Config Server"
-  sectionName: "CONFIG_SERVER_USERNAME"
-  encrypted: true
-  rule: null
-  restartRequired: true
-  defaultValue: "config-server-admin"
 spring.cloud.gateway.httpclient.pool.max-connections:
   configValueCount: "SINGLE"
   configValueType: "LONG"
