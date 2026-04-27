@@ -1,0 +1,64 @@
+application:
+  elasticsearch:
+    enabled: false
+    real-time:
+      reindex-cron: "0 */30 * ? * *"
+      reindex-enabled: false
+      reindex-entities:
+      - "EvaluationForm"
+      - "Evaluation"
+      reindex-size: 1000
+    scheduled:
+      reindex-cron: "0 */30 * ? * *"
+      reindex-enabled: false
+      reindex-entities:
+      - "EvaluationForm"
+      - "Evaluation"
+      reindex-size: 1000
+    skip-ssl: true
+  hazelcast:
+    port: 5701
+  inbox-server:
+    enabled: true
+  keycloak-admin:
+    app-realm-id: "sistas"
+    app-resource-id: "sistas-eva"
+    app-resource-secret: "{cipher}e70f33967d173184960a251abd2580470be635c204378bfa9a6eb98abaf0fbd458065b2b00b5f09f83cf7cc061883655ba78e7dbdb3935cd5e82c567e672714b"
+    client-id: "admin-cli"
+    max-pool-size: 10
+    password: "{cipher}ccadeec70c126d598fa965215709f60dd3ddc12c5a8d6a2a5fda55c597e5b020"
+    realm: "master"
+    server-url: "https://sistas-keycloak.sistas.com.tr"
+    trusted-audiences:
+    - "sistas-eva"
+    - "smart"
+    - "campus"
+    - "sistas-voice"
+    username: "{cipher}92244e44770a38b4a919df4e61c31e96d7a7208b72b0673ba0464eb3bb3de686"
+  refresh-agent-cache-cron: "0 */3 * * * *"
+  remove-liquibase-lock: false
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://admin:admin@localhost:8761/eureka/"
+evaluation:
+  eva-gateway-port: 9090
+  mail-from-displayed-name: "SistasDevelopment"
+security:
+  api-access:
+    access-token: "{cipher}d46afdf6c694d786610129696270629efc91b4764ace99f1ba8c3baf8468158c20027ca2473c84e16947ba55e4bfde360a05b01c2c1c11235412bde7b407c1ea"
+    enabled: true
+server:
+  port: 9091
+spring:
+  datasource:
+    password: "{cipher}80ef1c09934d8dd38be16a6197d83a5ce08b3582c606736281c7a4f1b383b6e1"
+    url: "jdbc:sqlserver://localhost:1433;database=bugraEva;encrypt=true;trustServerCertificate=true"
+    username: "{cipher}f49f490cc2ac593ea51dcd899f9403dcd167783e24cf93c2dcfb04dcb3bdf0b1"
+  elasticsearch:
+    uris: "http://localhost:9200"
+  mail:
+    host: "mail.sistas.com.tr"
+    password: "{cipher}e4cd69a6c34183721e5dc7e45d20d35f93ee2f7747afaa28c553f2aa3b561d1f0b0651dcfe9ca504338ba7380049458d"
+    port: 587
+    username: "{cipher}631163f8b6794bb87d704336461a596c248673b9110b8c3d96c7d56928ada826"
