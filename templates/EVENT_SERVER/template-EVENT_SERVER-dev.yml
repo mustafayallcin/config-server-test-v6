@@ -107,7 +107,7 @@ spring.security.oauth2.client.provider.oidc.issuer-uri:
   encrypted: false
   rule: null
   restartRequired: true
-  defaultValue: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+  defaultValue: "https://keycloak.example.com/realms/sistas"
 spring.security.oauth2.client.registration.oidc.client-id:
   configValueCount: "SINGLE"
   configValueType: "STRING"
