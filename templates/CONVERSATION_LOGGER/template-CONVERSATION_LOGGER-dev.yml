@@ -1,0 +1,210 @@
+application.microservice-configuration.hazelcast.native-client.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Hazelcast Client Password"
+  description: "Hazelcast Native Client Password"
+  sectionName: "HAZELCAST"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "dev-pass"
+application.microservice-configuration.hazelcast.native-client.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Hazelcast Client Url"
+  description: "Hazelcast Native Client Url"
+  sectionName: "HAZELCAST"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:5701"
+application.microservice-configuration.hazelcast.native-client.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Hazelcast Client Username"
+  description: "Hazelcast Native Client Username"
+  sectionName: "HAZELCAST"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "dev"
+cron-job.initialize-agent-aggregation-15-min-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Agent Aggregation Cron"
+  description: "Agent Aggregation Cron Expression"
+  sectionName: "CRON_JOB"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "0 6/15 * * * ?"
+cron-job.initialize-agent-session-aggregation-15-min-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Agent Session Aggregation Cron"
+  description: "Agent Session Aggregation Cron Expression"
+  sectionName: "CRON_JOB"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "0 4/15 * * * ?"
+cron-job.initialize-agent-sub-type-aggregation-15-min-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Agent Sub Type Aggregation Cron"
+  description: "Agent Sub Type Aggregation Cron Expression"
+  sectionName: "CRON_JOB"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "0 8/15 * * * ?"
+cron-job.initialize-queue-aggregation-15-min-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Queue Aggregation Cron"
+  description: "Queue Aggregation Cron Expression"
+  sectionName: "CRON_JOB"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "0 7/15 * * * ?"
+jhipster.registry.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "JHipster Registry Password"
+  description: "Eureka Registry Password"
+  sectionName: "REGISTRY"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "admin"
+kafka.agentMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Agent Message Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "AGENT_MESSAGE_TOPIC"
+kafka.bootstrap-servers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Bootstrap Servers"
+  description: "Kafka Bootstrap Servers"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:9092"
+kafka.callMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Call Message Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "CALL_MESSAGE_TOPIC"
+kafka.fromConversationLoggerToMediaProcessorTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From Conversation Logger To Media Processor Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_CONVERSATION_LOGGER_TO_MEDIA_PROCESSOR_TOPIC"
+kafka.fromMediaProcessorToConversationLoggerTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From Media Processor To Conversation Logger Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_MEDIA_PROCESSOR_TO_CONVERSATION_LOGGER_TOPIC"
+kafka.generalMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "General Message Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "GENERAL_MESSAGE_TOPIC"
+server.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Server Port"
+  description: "Application Server Port"
+  sectionName: "SERVER"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 26083
+spring.datasource.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Password"
+  description: "Database password value"
+  sectionName: "DATASOURCE"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "sistas_1"
+spring.datasource.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Url"
+  description: "Database url value"
+  sectionName: "DATASOURCE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "jdbc:sqlserver://localhost:1433;database=Test04-SisVoiceCC;encrypt=true;trustServerCertificate=true"
+spring.datasource.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Username"
+  description: "Database username value"
+  sectionName: "DATASOURCE"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "sa"
+spring.security.oauth2.client.provider.oidc.issuer-uri:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Oauth2 Issuer Uri"
+  description: "Keycloak Issuer Uri"
+  sectionName: "OAUTH2"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+spring.security.oauth2.client.registration.oidc.client-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Oauth2 Client Id"
+  description: "Keycloak Client Id"
+  sectionName: "OAUTH2"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "chatbot"
+spring.security.oauth2.client.registration.oidc.client-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Oauth2 Client Secret"
+  description: "Keycloak Client Secret"
+  sectionName: "OAUTH2"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "937BuymWEPlXvgVDHX4Yj8uDv3KC3cNM"
