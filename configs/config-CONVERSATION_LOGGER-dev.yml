@@ -75,4 +75,4 @@ spring:
 user-data-config:
   cron: "0 0 * * * ?"
   instance-name: "USER_DATA"
-  profile: "1"
+  profile: "21"
