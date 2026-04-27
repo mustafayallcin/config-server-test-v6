@@ -1,0 +1,42 @@
+application:
+  microservice-configuration:
+    hazelcast:
+      native-client:
+        password: "{cipher}dcdeec72e9ceb30b781942f1881d2ffd2dfabcc2a49c4258c68fcf1b1cb152d0"
+        url: "localhost:5701"
+        username: "{cipher}73adb3e3302204c05808d5ffab7dfb64521cf5729f018626b763dec31dd48a21"
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://admin:admin@localhost:8761/eureka/"
+kafka:
+  agentMessageTopic: "AGENT_MESSAGE_TOPIC"
+  bootstrap-servers: "127.0.0.1:9092"
+  callMessageTopic: "CALL_MESSAGE_TOPIC"
+  configChangeTopic: "CONFIG_CHANGE_TOPIC"
+  fromAlcatelToInteractionTopic: "FROM_ALCATEL_TO_INTERACTION_TOPIC"
+  fromGenesysEngageToInteractionTopic: "FROM_GENESYS_ENGAGE_TO_INTERACTION_TOPIC"
+  fromInteractionToAlcatelTopic: "FROM_INTERACTION_TO_ALCATEL_TOPIC"
+  fromInteractionToGenesysEngageTopic: "FROM_INTERACTION_TO_GENESYS_ENGAGE_TOPIC"
+  fromInteractionToSIPTopic: "FROM_INTERACTION_TO_SIP_TOPIC"
+  fromInteractionToSisPhoneTopic: "FROM_INTERACTION_TO_SISPHONE_TOPIC"
+  fromSIPToInteractionTopic: "FROM_SIP_TO_INTERACTION_TOPIC"
+  fromSisPhoneToInteractionTopic: "FROM_SISPHONE_TO_INTERACTION_TOPIC"
+  generalMessageTopic: "GENERAL_MESSAGE_TOPIC"
+  requestMakeCallTopic: "FROM_INTERACTION_TO_SINGLE_SIP_TOPIC"
+security:
+  api-access:
+    access-token: "{cipher}efdd1a58e7a3ae93a4285cdc12e11974b8fe160c475d89fb657331bb82e823d3b343ce3512969ef2bc29fb797266646a63c7df376b12b8be3e338dd4baf2b9d7"
+server:
+  port: 26082
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+        registration:
+          oidc:
+            client-id: "chatbot"
+            client-secret: "{cipher}3b10e7b2d22db0481cdb353ecddf8a8079b7d98b5869cd6c3543fec7f82b59543c5fde3ecf16c02a86625a81c6f41f7b3fa32447210bab56630aa0441123d922"
