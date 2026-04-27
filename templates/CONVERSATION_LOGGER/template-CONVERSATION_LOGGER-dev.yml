@@ -1,9 +1,41 @@
+application.microservice-configuration.hazelcast.discovery-mechanism:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Hazelcast Discovery Mechanism"
+  description: "Hazelcast cluster discovery mechanism (e.g. lite_member, native_client)"
+  sectionName: "HAZELCAST_DISCOVERY_MECHANISM"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "lite_member"
+application.microservice-configuration.hazelcast.lite-member.cluster-members:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Hazelcast Lite Member Cluster Members"
+  description: "Comma-separated Eureka service name(s) of the Hazelcast cluster to\
+    \ join as a lite member"
+  sectionName: "HAZELCAST_LITE_MEMBER_CLUSTER_MEMBERS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "conversationlogger"
+application.microservice-configuration.hazelcast.lite-member.instance-port-padding:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Hazelcast Lite Member Instance Port Padding"
+  description: "Port offset added to server.port to determine the Hazelcast member\
+    \ port (server.port + padding)"
+  sectionName: "HAZELCAST_LITE_MEMBER_PORT_PADDING"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 5701
 application.microservice-configuration.hazelcast.native-client.password:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Hazelcast Client Password"
-  description: "Hazelcast Native Client Password"
-  sectionName: "HAZELCAST"
+  displayName: "Hazelcast Native Client Password"
+  description: "Password for Hazelcast native client authentication"
+  sectionName: "HAZELCAST_NATIVE_CLIENT_PASSWORD"
   encrypted: true
   rule: null
   restartRequired: true
@@ -11,9 +43,9 @@ application.microservice-configuration.hazelcast.native-client.password:
 application.microservice-configuration.hazelcast.native-client.url:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Hazelcast Client Url"
-  description: "Hazelcast Native Client Url"
-  sectionName: "HAZELCAST"
+  displayName: "Hazelcast Native Client URL"
+  description: "Host and port of the Hazelcast cluster for native client connection"
+  sectionName: "HAZELCAST_NATIVE_CLIENT_URL"
   encrypted: false
   rule: null
   restartRequired: true
@@ -21,69 +53,206 @@ application.microservice-configuration.hazelcast.native-client.url:
 application.microservice-configuration.hazelcast.native-client.username:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Hazelcast Client Username"
-  description: "Hazelcast Native Client Username"
-  sectionName: "HAZELCAST"
+  displayName: "Hazelcast Native Client Username"
+  description: "Username for Hazelcast native client authentication"
+  sectionName: "HAZELCAST_NATIVE_CLIENT_USERNAME"
   encrypted: true
   rule: null
   restartRequired: true
   defaultValue: "hazelcast-username"
-cron-job.initialize-agent-aggregation-15-min-cron:
+application.microservice-role.aggregator:
   configValueCount: "SINGLE"
-  configValueType: "STRING"
-  displayName: "Agent Aggregation Cron"
-  description: "Agent Aggregation Cron Expression"
-  sectionName: "CRON_JOB"
+  configValueType: "BOOLEAN"
+  displayName: "Microservice Role - Aggregator"
+  description: "Enables the aggregation role for this ConversationLogger instance"
+  sectionName: "MICROSERVICE_ROLE_AGGREGATOR"
   encrypted: false
   rule: null
   restartRequired: true
+  defaultValue: true
+application.microservice-role.raw-data:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Microservice Role - Raw Data"
+  description: "Enables the raw data writing role for this ConversationLogger instance"
+  sectionName: "MICROSERVICE_ROLE_RAW_DATA"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+application.service-time-configuration.service-time1-lower-bound:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Service Time Band 1 Lower Bound (seconds)"
+  description: "Lower bound in seconds for the first service time classification band"
+  sectionName: "SERVICE_TIME1_LOWER_BOUND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 0
+application.service-time-configuration.service-time1-upper-bound:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Service Time Band 1 Upper Bound (seconds)"
+  description: "Upper bound in seconds for the first service time classification band"
+  sectionName: "SERVICE_TIME1_UPPER_BOUND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 10
+application.service-time-configuration.service-time2-lower-bound:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Service Time Band 2 Lower Bound (seconds)"
+  description: "Lower bound in seconds for the second service time classification\
+    \ band"
+  sectionName: "SERVICE_TIME2_LOWER_BOUND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 10
+application.service-time-configuration.service-time2-upper-bound:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Service Time Band 2 Upper Bound (seconds)"
+  description: "Upper bound in seconds for the second service time classification\
+    \ band"
+  sectionName: "SERVICE_TIME2_UPPER_BOUND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 20
+application.service-time-configuration.service-time3-lower-bound:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Service Time Band 3 Lower Bound (seconds)"
+  description: "Lower bound in seconds for the third service time classification band"
+  sectionName: "SERVICE_TIME3_LOWER_BOUND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 20
+application.service-time-configuration.service-time3-upper-bound:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Service Time Band 3 Upper Bound (seconds)"
+  description: "Upper bound in seconds for the third service time classification band"
+  sectionName: "SERVICE_TIME3_UPPER_BOUND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 30
+application.service-time-configuration.service-time4-lower-bound:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Service Time Band 4 Lower Bound (seconds)"
+  description: "Lower bound in seconds for the fourth service time classification\
+    \ band"
+  sectionName: "SERVICE_TIME4_LOWER_BOUND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 30
+application.service-time-configuration.service-time4-upper-bound:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Service Time Band 4 Upper Bound (seconds)"
+  description: "Upper bound in seconds for the fourth service time classification\
+    \ band"
+  sectionName: "SERVICE_TIME4_UPPER_BOUND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 60
+application.task-executor-properties.core-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Task Executor Core Pool Size"
+  description: "Core thread pool size for the ConversationLogger async task executor"
+  sectionName: "TASK_EXECUTOR_CORE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 4
+application.task-executor-properties.maximum-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Task Executor Max Pool Size"
+  description: "Maximum thread pool size for the ConversationLogger async task executor"
+  sectionName: "TASK_EXECUTOR_MAX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 6
+application.task-executor-properties.queue-capacity:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Task Executor Queue Capacity"
+  description: "Maximum number of tasks queued when all threads are busy in the task\
+    \ executor"
+  sectionName: "TASK_EXECUTOR_QUEUE_CAPACITY"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 1000000
+cron-job.initialize-agent-aggregation-15-min-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Agent Aggregation 15-Min Cron"
+  description: "Cron expression for initializing the 15-minute agent aggregation job"
+  sectionName: "CRON_AGENT_AGG_15MIN"
+  encrypted: false
+  rule: null
+  restartRequired: false
   defaultValue: "0 6/15 * * * ?"
 cron-job.initialize-agent-session-aggregation-15-min-cron:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Agent Session Aggregation Cron"
-  description: "Agent Session Aggregation Cron Expression"
-  sectionName: "CRON_JOB"
+  displayName: "Agent Session Aggregation 15-Min Cron"
+  description: "Cron expression for initializing the 15-minute agent session aggregation\
+    \ job"
+  sectionName: "CRON_AGENT_SESSION_AGG_15MIN"
   encrypted: false
   rule: null
-  restartRequired: true
+  restartRequired: false
   defaultValue: "0 4/15 * * * ?"
 cron-job.initialize-agent-sub-type-aggregation-15-min-cron:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Agent Sub Type Aggregation Cron"
-  description: "Agent Sub Type Aggregation Cron Expression"
-  sectionName: "CRON_JOB"
+  displayName: "Agent Sub-Type Aggregation 15-Min Cron"
+  description: "Cron expression for initializing the 15-minute agent sub-type aggregation\
+    \ job"
+  sectionName: "CRON_AGENT_SUBTYPE_AGG_15MIN"
   encrypted: false
   rule: null
-  restartRequired: true
+  restartRequired: false
   defaultValue: "0 8/15 * * * ?"
 cron-job.initialize-queue-aggregation-15-min-cron:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Queue Aggregation Cron"
-  description: "Queue Aggregation Cron Expression"
-  sectionName: "CRON_JOB"
+  displayName: "Queue Aggregation 15-Min Cron"
+  description: "Cron expression for initializing the 15-minute queue aggregation job"
+  sectionName: "CRON_QUEUE_AGG_15MIN"
   encrypted: false
   rule: null
-  restartRequired: true
+  restartRequired: false
   defaultValue: "0 7/15 * * * ?"
 eureka.client.service-url.defaultZone:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "DefaultZone"
-  description: "DefaultZone"
-  sectionName: "DEFAULTZONE"
-  encrypted: true
+  displayName: "Eureka Default Zone URL"
+  description: "Eureka server URL including basic auth credentials for service registration"
+  sectionName: "EUREKA_DEFAULT_ZONE"
+  encrypted: false
   rule: null
   restartRequired: true
   defaultValue: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
 kafka.agentMessageTopic:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Agent Message Topic"
-  description: "Kafka Topic"
-  sectionName: "KAFKA"
+  displayName: "Kafka Agent Message Topic"
+  description: "Kafka topic name for agent status and state messages"
+  sectionName: "KAFKA_AGENT_MESSAGE_TOPIC"
   encrypted: false
   rule: null
   restartRequired: false
@@ -92,8 +261,8 @@ kafka.bootstrap-servers:
   configValueCount: "SINGLE"
   configValueType: "STRING"
   displayName: "Kafka Bootstrap Servers"
-  description: "Kafka Bootstrap Servers"
-  sectionName: "KAFKA"
+  description: "Comma-separated list of Kafka broker addresses"
+  sectionName: "KAFKA_BOOTSTRAP_SERVERS"
   encrypted: false
   rule: null
   restartRequired: true
@@ -101,19 +270,29 @@ kafka.bootstrap-servers:
 kafka.callMessageTopic:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Call Message Topic"
-  description: "Kafka Topic"
-  sectionName: "KAFKA"
+  displayName: "Kafka Call Message Topic"
+  description: "Kafka topic name for call event messages"
+  sectionName: "KAFKA_CALL_MESSAGE_TOPIC"
   encrypted: false
   rule: null
   restartRequired: false
   defaultValue: "CALL_MESSAGE_TOPIC"
+kafka.consumer.group.id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Consumer Group ID"
+  description: "Consumer group ID for the main Kafka consumer"
+  sectionName: "KAFKA_CONSUMER_GROUP_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "conversation-logger"
 kafka.fromConversationLoggerToMediaProcessorTopic:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "From Conversation Logger To Media Processor Topic"
-  description: "Kafka Topic"
-  sectionName: "KAFKA"
+  displayName: "Kafka Topic - ConversationLogger to MediaProcessor"
+  description: "Kafka topic name for messages sent from ConversationLogger to MediaProcessor"
+  sectionName: "KAFKA_TOPIC_CL_TO_MP"
   encrypted: false
   rule: null
   restartRequired: false
@@ -121,9 +300,9 @@ kafka.fromConversationLoggerToMediaProcessorTopic:
 kafka.fromMediaProcessorToConversationLoggerTopic:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "From Media Processor To Conversation Logger Topic"
-  description: "Kafka Topic"
-  sectionName: "KAFKA"
+  displayName: "Kafka Topic - MediaProcessor to ConversationLogger"
+  description: "Kafka topic name for messages sent from MediaProcessor to ConversationLogger"
+  sectionName: "KAFKA_TOPIC_MP_TO_CL"
   encrypted: false
   rule: null
   restartRequired: false
@@ -131,29 +310,80 @@ kafka.fromMediaProcessorToConversationLoggerTopic:
 kafka.generalMessageTopic:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "General Message Topic"
-  description: "Kafka Topic"
-  sectionName: "KAFKA"
+  displayName: "Kafka General Message Topic"
+  description: "Kafka topic name for general broadcast messages"
+  sectionName: "KAFKA_GENERAL_MESSAGE_TOPIC"
   encrypted: false
   rule: null
   restartRequired: false
   defaultValue: "GENERAL_MESSAGE_TOPIC"
+kafka.sendAckTimeoutSeconds:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Kafka Send Ack Timeout (seconds)"
+  description: "Maximum time in seconds to wait for Kafka send acknowledgement"
+  sectionName: "KAFKA_SEND_ACK_TIMEOUT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 10
+not-ready-reason.default-provider:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Not-Ready Reason Default Provider"
+  description: "Default provider name used for agent not-ready reason codes (e.g.\
+    \ sisphone)"
+  sectionName: "NOT_READY_REASON_DEFAULT_PROVIDER"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "sisphone"
 server.port:
   configValueCount: "SINGLE"
   configValueType: "LONG"
   displayName: "Server Port"
-  description: "Application Server Port"
-  sectionName: "SERVER"
+  description: "HTTP port the application listens on"
+  sectionName: "SERVER_PORT"
   encrypted: false
   rule: null
   restartRequired: true
   defaultValue: 26083
+spring.cloud.stream.kafka.binder.brokers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Stream Binder Brokers"
+  description: "Kafka broker address used by Spring Cloud Stream binder"
+  sectionName: "KAFKA_STREAM_BINDER_BROKERS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:9092"
+spring.datasource.hikari.maximum-pool-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Hikari Maximum Pool Size"
+  description: "Maximum number of connections in the Hikari connection pool"
+  sectionName: "DATASOURCE_HIKARI_MAX_POOL_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 500
+spring.datasource.hikari.minimum-idle:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Hikari Minimum Idle Connections"
+  description: "Minimum number of idle connections maintained in the Hikari pool"
+  sectionName: "DATASOURCE_HIKARI_MIN_IDLE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 50
 spring.datasource.password:
   configValueCount: "SINGLE"
   configValueType: "STRING"
   displayName: "Datasource Password"
-  description: "Database password value"
-  sectionName: "DATASOURCE"
+  description: "Database login password"
+  sectionName: "DATASOURCE_PASSWORD"
   encrypted: true
   rule: null
   restartRequired: true
@@ -161,19 +391,19 @@ spring.datasource.password:
 spring.datasource.url:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Datasource Url"
-  description: "Database url value"
-  sectionName: "DATASOURCE"
+  displayName: "Datasource URL"
+  description: "Database connection URL (MSSQL / MySQL / PostgreSQL)"
+  sectionName: "DATASOURCE_URL"
   encrypted: false
   rule: null
   restartRequired: true
-  defaultValue: "jdbc:sqlserver://localhost:1433;database=Test04-SisVoiceCC;encrypt=true;trustServerCertificate=true"
+  defaultValue: "jdbc:sqlserver://localhost:1433;database=SisVoiceCC;encrypt=true;trustServerCertificate=true"
 spring.datasource.username:
   configValueCount: "SINGLE"
   configValueType: "STRING"
   displayName: "Datasource Username"
-  description: "Database username value"
-  sectionName: "DATASOURCE"
+  description: "Database login username"
+  sectionName: "DATASOURCE_USERNAME"
   encrypted: true
   rule: null
   restartRequired: true
@@ -181,19 +411,19 @@ spring.datasource.username:
 spring.security.oauth2.client.provider.oidc.issuer-uri:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Oauth2 Issuer Uri"
-  description: "Keycloak Issuer Uri"
-  sectionName: "OAUTH2"
+  displayName: "OIDC Issuer URI"
+  description: "Keycloak realm issuer URI used for OAuth2 token validation"
+  sectionName: "OIDC_ISSUER_URI"
   encrypted: false
   rule: null
   restartRequired: true
-  defaultValue: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+  defaultValue: "https://keycloak.example.com/realms/sistas"
 spring.security.oauth2.client.registration.oidc.client-id:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Oauth2 Client Id"
-  description: "Keycloak Client Id"
-  sectionName: "OAUTH2"
+  displayName: "OAuth2 Client ID"
+  description: "OAuth2 client ID registered in Keycloak for this service"
+  sectionName: "OAUTH2_CLIENT_ID"
   encrypted: false
   rule: null
   restartRequired: true
@@ -201,10 +431,41 @@ spring.security.oauth2.client.registration.oidc.client-id:
 spring.security.oauth2.client.registration.oidc.client-secret:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "Oauth2 Client Secret"
-  description: "Keycloak Client Secret"
-  sectionName: "OAUTH2"
+  displayName: "OAuth2 Client Secret"
+  description: "OAuth2 client secret registered in Keycloak for this service"
+  sectionName: "OAUTH2_CLIENT_SECRET"
   encrypted: true
   rule: null
   restartRequired: true
-  defaultValue: "937BuymWEPlXvgVDHX4Yj8uDv3KC3cNM"
+  defaultValue: "oauth2-client-secret"
+user-data-config.cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data Config Sync Cron Expression"
+  description: "Cron expression controlling how frequently user data configuration\
+    \ is refreshed"
+  sectionName: "USER_DATA_CONFIG_CRON"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "0 0 * * * ?"
+user-data-config.instance-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data Config Instance Name"
+  description: "Instance name identifier used for user data configuration lookup"
+  sectionName: "USER_DATA_CONFIG_INSTANCE_NAME"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "USER_DATA"
+user-data-config.profile:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data Config Profile"
+  description: "Profile identifier used to fetch user data column mapping configuration"
+  sectionName: "USER_DATA_CONFIG_PROFILE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "1"
