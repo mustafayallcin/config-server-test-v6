@@ -1,0 +1,43 @@
+application:
+  chatbot:
+    enabled: false
+    socket-url: "http://localhost:28080"
+    widgetAccessToken: "{cipher}33d9f80da530acda6c959f3086627db5f3fea4e3dde9aca17205e1375e6fe2d325450bc3c944bf8c90a282c4cd426e6f"
+  hazelcast:
+    port: 5701
+  keycloak-admin:
+    app-realm-id: "sistas"
+    app-resource-id: "sistas-eva"
+    app-resource-secret: "{cipher}c96dec178a3cb2d4d8a9601a0283818ecf938399d33b2fe0be7224caa147a4bf4d42a9cd5cdc43408cd9a3b843a4b9ba1d62b30c39f7c93bc788a5092e116444"
+    client-id: "admin-cli"
+    max-pool-size: 10
+    password: "{cipher}2744908742c17a78f5b2dea82fe6fcad53040cb1d574a7e6a6114e5af40f15e6"
+    realm: "master"
+    server-url: "https://sistas-keycloak.sistas.com.tr"
+    trusted-audiences:
+    - "sistas-eva"
+    - "smart"
+    - "campus"
+    - "sistas-voice"
+    username: "{cipher}d7fc682658acc9c003da7493806095405c302e08057e319d371a0aa8da200d44"
+  session-management-properties:
+    concurrent-session-allowed: false
+    session-timeout-in-minutes: 120
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://admin:admin@localhost:8761/eureka/"
+jhipster:
+  gateway:
+    rate-limiting:
+      duration-in-seconds: 3600
+      enabled: false
+      limit: 100000
+server:
+  port: 9090
+spring:
+  cloud:
+    gateway:
+      httpclient:
+        pool:
+          max-connections: 1000
