@@ -66,7 +66,7 @@ kafka:
     retention: 60000
 security:
   api-access:
-    access-token: "{cipher}ad614d0ef7e6b9be392f6e3854184ae72775fc56a69ca7b17f5f31409cce6ccce3c36e2648e3eff0d9c303cf30931e5a"
+    access-token: "{cipher}60990f490b00e9a618e172fd38e1f681791c2c8b420a35160ff70a01916742264de2fc9299767225ae497d76ecbfa48109fd1dedd4ff8615e813b6a9b1870d4e"
 server:
   port: 26082
 spring:
