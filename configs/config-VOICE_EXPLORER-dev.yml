@@ -11,12 +11,12 @@ application:
   hazelcast:
     port: 5701
   keycloak-admin:
-    app-realm-id: "app-realm"
-    app-resource-id: "app-resource-id"
-    app-resource-secret: "{cipher}9f5673f9c55053d41af6749293a13f726b934694ed4743440aaea8eec50c51a3c263f71f451f34bcdf2946233c12da41"
+    app-realm-id: "sistas"
+    app-resource-id: "sistas-voice"
+    app-resource-secret: "{cipher}e7dc9ad94f1d44997e4fb7963ba69a7503963e324a8ba6c267a0fbc48722c02df56ed308493ac95c94c53d46fc85271dc21f8638ef067fb774e01ccc64bbe916"
     client-id: "admin-cli"
     max-pool-size: 10
-    password: "{cipher}7eb56fa8ecdd26b679852896aefacd6b0b7350efd144a27cb72b961973de90b9cb5812b980f518cc346cb96a144178bb"
+    password: "{cipher}44536e1c8bc12d8555201668598a37738aa2601836f7c552cef687e9840a697e"
     realm: "master"
     server-url: "https://sistas-keycloak.sistas.com.tr"
     trusted-audiences:
@@ -26,14 +26,14 @@ application:
     - "sistas-phone"
     - "chatbot"
     - "client_credentials"
-    username: "{cipher}f3696877dc60d773177f0f785b5f936a3ee18d9fac7eb628b78f50b048c0f50d3941298d293ab1660687d93440f48fbd"
+    username: "{cipher}27ecb2fd2285e3b9c869829855bdbeaa97ddc0094e3ceebfe53623cbd93e0bde"
   session-management-properties:
     concurrent-session-allowed: false
     session-timeout-in-minutes: 120
 eureka:
   client:
     service-url:
-      defaultZone: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
+      defaultZone: "http://admin:admin@localhost:8761/eureka/"
 jhipster:
   gateway:
     rate-limiting:
