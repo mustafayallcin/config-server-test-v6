@@ -1,0 +1,429 @@
+application.elasticsearch.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Elasticsearch Enabled"
+  description: "Enables or disables Elasticsearch indexing and search features"
+  sectionName: "ELASTICSEARCH_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.elasticsearch.real-time.reindex-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Real-Time Reindex Cron Expression"
+  description: "Cron expression controlling the real-time reindex polling interval"
+  sectionName: "ELASTICSEARCH_REALTIME_REINDEX_CRON"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "0 */30 * ? * *"
+application.elasticsearch.real-time.reindex-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Elasticsearch Real-Time Reindex Enabled"
+  description: "Enables real-time reindexing triggered by data changes"
+  sectionName: "ELASTICSEARCH_REALTIME_REINDEX_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+application.elasticsearch.real-time.reindex-entities:
+  configValueCount: "LIST"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Real-Time Reindex Entities"
+  description: "List of entity names to be included in real-time reindexing"
+  sectionName: "ELASTICSEARCH_REALTIME_REINDEX_ENTITIES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue:
+  - "EvaluationForm"
+  - "Evaluation"
+application.elasticsearch.real-time.reindex-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Elasticsearch Real-Time Reindex Batch Size"
+  description: "Number of records processed per batch during real-time reindexing"
+  sectionName: "ELASTICSEARCH_REALTIME_REINDEX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1000
+application.elasticsearch.scheduled.reindex-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Scheduled Reindex Cron Expression"
+  description: "Cron expression controlling when scheduled reindexing runs"
+  sectionName: "ELASTICSEARCH_SCHEDULED_REINDEX_CRON"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "0 */30 * ? * *"
+application.elasticsearch.scheduled.reindex-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Elasticsearch Scheduled Reindex Enabled"
+  description: "Enables periodic scheduled reindexing of Elasticsearch data"
+  sectionName: "ELASTICSEARCH_SCHEDULED_REINDEX_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+application.elasticsearch.scheduled.reindex-entities:
+  configValueCount: "LIST"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Scheduled Reindex Entities"
+  description: "List of entity names to be included in scheduled reindexing"
+  sectionName: "ELASTICSEARCH_SCHEDULED_REINDEX_ENTITIES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue:
+  - "EvaluationForm"
+  - "Evaluation"
+application.elasticsearch.scheduled.reindex-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Elasticsearch Scheduled Reindex Batch Size"
+  description: "Number of records processed per reindex batch in scheduled jobs"
+  sectionName: "ELASTICSEARCH_SCHEDULED_REINDEX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1000
+application.elasticsearch.skip-ssl:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Elasticsearch Skip SSL Verification"
+  description: "Skips SSL certificate verification for Elasticsearch connections"
+  sectionName: "ELASTICSEARCH_SKIP_SSL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+application.hazelcast.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Hazelcast Port"
+  description: "Network port Hazelcast cluster members listen on"
+  sectionName: "HAZELCAST_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 5701
+application.inbox-server.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Inbox Server Enabled"
+  description: "Enables or disables the inbox server integration for incoming messages"
+  sectionName: "INBOX_SERVER_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+application.keycloak-admin.app-realm-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Realm ID"
+  description: "The realm where the application client is registered"
+  sectionName: "KEYCLOAK_APP_REALM_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "app-realm"
+application.keycloak-admin.app-resource-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource (Client) ID"
+  description: "OAuth2 client ID registered in Keycloak for this application"
+  sectionName: "KEYCLOAK_APP_RESOURCE_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "sistas-eva"
+application.keycloak-admin.app-resource-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource Secret"
+  description: "OAuth2 client secret registered in Keycloak for this application"
+  sectionName: "KEYCLOAK_APP_RESOURCE_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "keycloak-resource-secret"
+application.keycloak-admin.client-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Client ID"
+  description: "Client ID used for Keycloak admin CLI operations (e.g. admin-cli)"
+  sectionName: "KEYCLOAK_ADMIN_CLIENT_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "admin-cli"
+application.keycloak-admin.max-pool-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Keycloak Admin Max Pool Size"
+  description: "Maximum connection pool size for Keycloak admin client"
+  sectionName: "KEYCLOAK_ADMIN_MAX_POOL_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 10
+application.keycloak-admin.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Password"
+  description: "Keycloak admin console password"
+  sectionName: "KEYCLOAK_ADMIN_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-admin-password"
+application.keycloak-admin.realm:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Realm"
+  description: "Realm used for Keycloak admin operations (typically \"master\")"
+  sectionName: "KEYCLOAK_ADMIN_REALM"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "master"
+application.keycloak-admin.server-url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Server URL"
+  description: "Base URL of the Keycloak server"
+  sectionName: "KEYCLOAK_SERVER_URL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "https://sistas-keycloak.sistas.com.tr"
+application.keycloak-admin.trusted-audiences:
+  configValueCount: "LIST"
+  configValueType: "STRING"
+  displayName: "Keycloak Trusted Audiences"
+  description: "Comma-separated list of trusted audience values for JWT validation"
+  sectionName: "KEYCLOAK_TRUSTED_AUDIENCES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue:
+  - "sistas-eva"
+  - "smart"
+  - "campus"
+  - "sistas-voice"
+application.keycloak-admin.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Username"
+  description: "Keycloak admin console username"
+  sectionName: "KEYCLOAK_ADMIN_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-admin-username"
+application.refresh-agent-cache-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Refresh Agent Cache Cron Expression"
+  description: "Cron expression that controls how frequently the agent cache is refreshed"
+  sectionName: "REFRESH_AGENT_CACHE_CRON"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "0 */3 * * * *"
+application.remove-liquibase-lock:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Remove Liquibase Lock on Startup"
+  description: "Automatically removes stale Liquibase changelog locks when the application\
+    \ starts"
+  sectionName: "REMOVE_LIQUIBASE_LOCK"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+eureka.client.service-url.defaultZone:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Eureka Default Zone URL"
+  description: "Eureka server URL including basic auth credentials for service registration"
+  sectionName: "EUREKA_DEFAULT_ZONE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://admin:password@localhost:8761/eureka/"
+evaluation.eva-gateway-port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "EVA Gateway Port"
+  description: "Port number of the EVA gateway service used for evaluation routing"
+  sectionName: "EVA_GATEWAY_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 9090
+evaluation.mail-from-displayed-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Mail From Displayed Name"
+  description: "Display name shown as the sender in outgoing evaluation e-mails"
+  sectionName: "MAIL_FROM_DISPLAYED_NAME"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "SistasDevelopment"
+security.api-access.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "API Access Token"
+  description: "Static bearer token used to secure internal API endpoints"
+  sectionName: "API_ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "api-access-token"
+security.api-access.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "API Access Security Enabled"
+  description: "Enables or disables token-based API access control"
+  sectionName: "API_ACCESS_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: true
+server.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Server Port"
+  description: "HTTP port the application listens on"
+  sectionName: "SERVER_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 9091
+spring.cloud.config.label:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Server Label (Branch/Version)"
+  description: "Git branch, tag or commit label to fetch configuration from"
+  sectionName: "CONFIG_SERVER_LABEL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "main"
+spring.cloud.config.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Server Password"
+  description: "Basic auth password for connecting to the Spring Cloud Config Server"
+  sectionName: "CONFIG_SERVER_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "config-server-password"
+spring.cloud.config.uri:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Server URI"
+  description: "Base URL of the Spring Cloud Config Server instance"
+  sectionName: "CONFIG_SERVER_URI"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://localhost:8761/config"
+spring.cloud.config.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Server Username"
+  description: "Basic auth username for connecting to the Spring Cloud Config Server"
+  sectionName: "CONFIG_SERVER_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "config-server-admin"
+spring.datasource.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Password"
+  description: "Database login password"
+  sectionName: "DATASOURCE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "datasource-password"
+spring.datasource.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource URL"
+  description: "Database connection URL (MSSQL / MySQL / PostgreSQL)"
+  sectionName: "DATASOURCE_URL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "jdbc:sqlserver://localhost:1433;database=evacore;encrypt=true;trustServerCertificate=true"
+spring.datasource.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Username"
+  description: "Database login username"
+  sectionName: "DATASOURCE_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "datasource-username"
+spring.elasticsearch.uris:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch URI"
+  description: "Connection URI for the Elasticsearch cluster"
+  sectionName: "ELASTICSEARCH_URI"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://localhost:9200"
+spring.mail.host:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Mail Server Host"
+  description: "SMTP server hostname for outgoing mail"
+  sectionName: "MAIL_HOST"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "mail.sistas.com.tr"
+spring.mail.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Mail Password"
+  description: "SMTP authentication password"
+  sectionName: "MAIL_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "mail-password"
+spring.mail.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Mail Server Port"
+  description: "SMTP server port"
+  sectionName: "MAIL_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 587
+spring.mail.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Mail Username"
+  description: "SMTP authentication username"
+  sectionName: "MAIL_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "mail-username"
