@@ -7,7 +7,7 @@ application.microservice-configuration.hazelcast.native-client.password:
   encrypted: true
   rule: null
   restartRequired: true
-  defaultValue: "dev-pass"
+  defaultValue: "hazelcast-password"
 application.microservice-configuration.hazelcast.native-client.url:
   configValueCount: "SINGLE"
   configValueType: "STRING"
@@ -27,7 +27,7 @@ application.microservice-configuration.hazelcast.native-client.username:
   encrypted: true
   rule: null
   restartRequired: true
-  defaultValue: "dev"
+  defaultValue: "hazelcast-username"
 cron-job.initialize-agent-aggregation-15-min-cron:
   configValueCount: "SINGLE"
   configValueType: "STRING"
@@ -157,7 +157,7 @@ spring.datasource.password:
   encrypted: true
   rule: null
   restartRequired: true
-  defaultValue: "sistas_1"
+  defaultValue: "datasource-password"
 spring.datasource.url:
   configValueCount: "SINGLE"
   configValueType: "STRING"
@@ -177,7 +177,7 @@ spring.datasource.username:
   encrypted: true
   rule: null
   restartRequired: true
-  defaultValue: "sa"
+  defaultValue: "datasource-username"
 spring.security.oauth2.client.provider.oidc.issuer-uri:
   configValueCount: "SINGLE"
   configValueType: "STRING"
