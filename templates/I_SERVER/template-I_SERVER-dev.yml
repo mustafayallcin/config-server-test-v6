@@ -1,0 +1,230 @@
+application.microservice-configuration.hazelcast.native-client.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Hazelcast Client Password"
+  description: "Hazelcast Native Client Password"
+  sectionName: "HAZELCAST"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "hazelcast-password"
+application.microservice-configuration.hazelcast.native-client.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Hazelcast Client Url"
+  description: "Hazelcast Native Client Url"
+  sectionName: "HAZELCAST"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:5701"
+application.microservice-configuration.hazelcast.native-client.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Hazelcast Client Username"
+  description: "Hazelcast Native Client Username"
+  sectionName: "HAZELCAST"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "hazelcast-username"
+eureka.client.service-url.defaultZone:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Eureka Default Zone URL"
+  description: "Eureka server URL including basic auth credentials for service registration"
+  sectionName: "EUREKA_DEFAULT_ZONE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
+kafka.agentMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Agent Message Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "AGENT_MESSAGE_TOPIC"
+kafka.bootstrap-servers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Bootstrap Servers"
+  description: "Kafka Bootstrap Servers"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "127.0.0.1:9092"
+kafka.callMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Call Message Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "CALL_MESSAGE_TOPIC"
+kafka.configChangeTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Change Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "CONFIG_CHANGE_TOPIC"
+kafka.fromAlcatelToInteractionTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From Alcatel To Interaction Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_ALCATEL_TO_INTERACTION_TOPIC"
+kafka.fromGenesysEngageToInteractionTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From Genesys Engage To Interaction Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_GENESYS_ENGAGE_TO_INTERACTION_TOPIC"
+kafka.fromInteractionToAlcatelTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From Interaction To Alcatel Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_INTERACTION_TO_ALCATEL_TOPIC"
+kafka.fromInteractionToGenesysEngageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From Interaction To Genesys Engage Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_INTERACTION_TO_GENESYS_ENGAGE_TOPIC"
+kafka.fromInteractionToSIPTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From Interaction To SIP Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_INTERACTION_TO_SIP_TOPIC"
+kafka.fromInteractionToSisPhoneTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From Interaction To SisPhone Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_INTERACTION_TO_SISPHONE_TOPIC"
+kafka.fromSIPToInteractionTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From SIP To Interaction Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_SIP_TO_INTERACTION_TOPIC"
+kafka.fromSisPhoneToInteractionTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "From SisPhone To Interaction Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_SISPHONE_TO_INTERACTION_TOPIC"
+kafka.generalMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "General Message Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "GENERAL_MESSAGE_TOPIC"
+kafka.requestMakeCallTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Request Make Call Topic"
+  description: "Kafka Topic"
+  sectionName: "KAFKA"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_INTERACTION_TO_SINGLE_SIP_TOPIC"
+security.api-access.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Security Api Access Token"
+  description: "Access Token for API"
+  sectionName: "SECURITY"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "api-access-token"
+server.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Server Port"
+  description: "Application Server Port"
+  sectionName: "SERVER"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 26082
+spring.security.oauth2.client.provider.oidc.issuer-uri:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Oauth2 Issuer Uri"
+  description: "Keycloak Issuer Uri"
+  sectionName: "OAUTH2"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+spring.security.oauth2.client.registration.oidc.client-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Oauth2 Client Id"
+  description: "Keycloak Client Id"
+  sectionName: "OAUTH2"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "chatbot"
+spring.security.oauth2.client.registration.oidc.client-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Oauth2 Client Secret"
+  description: "Keycloak Client Secret"
+  sectionName: "OAUTH2"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "client-secret"
