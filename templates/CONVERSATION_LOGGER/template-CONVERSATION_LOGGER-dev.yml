@@ -68,16 +68,16 @@ cron-job.initialize-queue-aggregation-15-min-cron:
   rule: null
   restartRequired: true
   defaultValue: "0 7/15 * * * ?"
-jhipster.registry.password:
+eureka.client.service-url.defaultZone:
   configValueCount: "SINGLE"
   configValueType: "STRING"
-  displayName: "JHipster Registry Password"
-  description: "Eureka Registry Password"
-  sectionName: "REGISTRY"
+  displayName: "DefaultZone"
+  description: "DefaultZone"
+  sectionName: "DEFAULTZONE"
   encrypted: true
   rule: null
   restartRequired: true
-  defaultValue: "admin"
+  defaultValue: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
 kafka.agentMessageTopic:
   configValueCount: "SINGLE"
   configValueType: "STRING"
