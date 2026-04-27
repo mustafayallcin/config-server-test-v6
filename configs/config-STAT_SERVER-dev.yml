@@ -39,7 +39,7 @@ scheduled:
     cron: "0 0/10 * * * ?"
 security:
   api-access:
-    access-token: "{cipher}2abd4722a0ea234f2d60ea1c82c8802eebdc00a2ab75773d455bd91c1ce80a6eb0574717b6efa6761273a6f12af97bd5"
+    access-token: "{cipher}89ec4a861bbb78dd1f14ce49ec890d217da9a58d4a215062dd6113048e0eab6a03a35feda69285d01f63d70a07d685d2ba2a10258cfc8da4205f57159e75e367"
 server:
   port: 26081
 spring:
