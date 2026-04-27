@@ -1,0 +1,31 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://admin:admin@localhost:8761/eureka/"
+kafka:
+  agentMessageTopic: "AGENT_MESSAGE_TOPIC"
+  bootstrap-servers: "localhost:9092"
+  callMessageTopic: "CALL_MESSAGE_TOPIC"
+  generalMessageTopic: "GENERAL_MESSAGE_TOPIC"
+server:
+  port: 26084
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: "localhost:9092"
+  datasource:
+    password: "{cipher}c42691bc758b20f49eb60297021bc4edfb2409ff43b904865ee4ed000f6a67b1"
+    url: "jdbc:sqlserver://localhost:1433;database=EventServer;encrypt=false"
+    username: "{cipher}56c8ec2809c99383f8fd245ece14d17b6903910700cd56df4cec4d9b8fcdedff"
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+        registration:
+          oidc:
+            client-id: "chatbot"
+            client-secret: "{cipher}2afff1c19fb5936bb33f0ef076f92228b7b613101c8f694254f4c398e34a85ef01de52df7a37c27fedd2d9da64ba341d2eacee74a893757ad979d1856d9b94aa"
