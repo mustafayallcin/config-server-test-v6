@@ -37,7 +37,7 @@ application.config-server.keycloak-config.keycloak-url:
   encrypted: false
   rule: null
   restartRequired: true
-  defaultValue: "https://keycloak.example.com/realms/sistas/protocol/openid-connect/token"
+  defaultValue: "https://sistas-keycloak.sistas.com.tr/realms/sistas/protocol/openid-connect/token"
 application.conversation-share.open-count:
   configValueCount: "SINGLE"
   configValueType: "LONG"
@@ -187,7 +187,7 @@ application.keycloak-admin.server-url:
   encrypted: false
   rule: null
   restartRequired: true
-  defaultValue: "https://keycloak.example.com"
+  defaultValue: "https://sistas-keycloak.sistas.com.tr"
 application.keycloak-admin.trusted-audiences:
   configValueCount: "LIST"
   configValueType: "STRING"
@@ -314,7 +314,7 @@ eureka.client.service-url.defaultZone:
   encrypted: false
   rule: null
   restartRequired: true
-  defaultValue: "http://admin:password@localhost:8761/eureka/"
+  defaultValue: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
 kafka.bootstrap-servers:
   configValueCount: "SINGLE"
   configValueType: "STRING"
