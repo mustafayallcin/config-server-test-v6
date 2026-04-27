@@ -1,0 +1,266 @@
+application.chatbot.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Chatbot Integration Enabled"
+  description: "Enables or disables the chatbot widget integration on the gateway"
+  sectionName: "CHATBOT_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+application.chatbot.socket-url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Chatbot Socket URL"
+  description: "WebSocket server URL for the chatbot backend service"
+  sectionName: "CHATBOT_SOCKET_URL"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "http://localhost:28080"
+application.chatbot.widgetAccessToken:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Chatbot Widget Access Token"
+  description: "Access token used to authenticate the chatbot widget with the backend"
+  sectionName: "CHATBOT_WIDGET_ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "chatbot-widget-access-token"
+application.hazelcast.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Hazelcast Port"
+  description: "Network port Hazelcast cluster members listen on"
+  sectionName: "HAZELCAST_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 5701
+application.keycloak-admin.app-realm-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Realm ID"
+  description: "The realm where the application client is registered"
+  sectionName: "KEYCLOAK_APP_REALM_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "app-realm"
+application.keycloak-admin.app-resource-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource (Client) ID"
+  description: "OAuth2 client ID registered in Keycloak for this application"
+  sectionName: "KEYCLOAK_APP_RESOURCE_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "sistas-eva"
+application.keycloak-admin.app-resource-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource Secret"
+  description: "OAuth2 client secret registered in Keycloak for this application"
+  sectionName: "KEYCLOAK_APP_RESOURCE_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "keycloak-resource-secret"
+application.keycloak-admin.client-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Client ID"
+  description: "Client ID used for Keycloak admin CLI operations (e.g. admin-cli)"
+  sectionName: "KEYCLOAK_ADMIN_CLIENT_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "admin-cli"
+application.keycloak-admin.max-pool-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Keycloak Admin Max Pool Size"
+  description: "Maximum connection pool size for Keycloak admin client"
+  sectionName: "KEYCLOAK_ADMIN_MAX_POOL_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 10
+application.keycloak-admin.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Password"
+  description: "Keycloak admin console password"
+  sectionName: "KEYCLOAK_ADMIN_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-admin-password"
+application.keycloak-admin.realm:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Realm"
+  description: "Realm used for Keycloak admin operations (typically \"master\")"
+  sectionName: "KEYCLOAK_ADMIN_REALM"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "master"
+application.keycloak-admin.server-url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Server URL"
+  description: "Base URL of the Keycloak server"
+  sectionName: "KEYCLOAK_SERVER_URL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "https://sistas-keycloak.sistas.com.tr"
+application.keycloak-admin.trusted-audiences:
+  configValueCount: "LIST"
+  configValueType: "STRING"
+  displayName: "Keycloak Trusted Audiences"
+  description: "Comma-separated list of trusted audience values for JWT validation"
+  sectionName: "KEYCLOAK_TRUSTED_AUDIENCES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue:
+  - "sistas-eva"
+  - "smart"
+  - "campus"
+  - "sistas-voice"
+application.keycloak-admin.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Username"
+  description: "Keycloak admin console username"
+  sectionName: "KEYCLOAK_ADMIN_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-admin-username"
+application.session-management-properties.concurrent-session-allowed:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Concurrent Session Allowed"
+  description: "Allows or prevents multiple simultaneous sessions for the same user"
+  sectionName: "CONCURRENT_SESSION_ALLOWED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+application.session-management-properties.session-timeout-in-minutes:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Session Timeout (minutes)"
+  description: "Duration in minutes after which an idle user session expires"
+  sectionName: "SESSION_TIMEOUT_IN_MINUTES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 120
+eureka.client.service-url.defaultZone:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Eureka Default Zone URL"
+  description: "Eureka server URL including basic auth credentials for service registration"
+  sectionName: "EUREKA_DEFAULT_ZONE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
+jhipster.gateway.rate-limiting.duration-in-seconds:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Gateway Rate Limiting Duration (seconds)"
+  description: "Time window in seconds for the rate limiting counter"
+  sectionName: "GATEWAY_RATE_LIMITING_DURATION"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 3600
+jhipster.gateway.rate-limiting.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Gateway Rate Limiting Enabled"
+  description: "Enables or disables rate limiting on gateway routes"
+  sectionName: "GATEWAY_RATE_LIMITING_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+jhipster.gateway.rate-limiting.limit:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Gateway Rate Limiting Request Limit"
+  description: "Maximum number of requests allowed per client within the configured\
+    \ duration"
+  sectionName: "GATEWAY_RATE_LIMITING_LIMIT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 100000
+server.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Server Port"
+  description: "HTTP port the application listens on"
+  sectionName: "SERVER_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 9090
+spring.cloud.config.label:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Server Label (Branch/Version)"
+  description: "Git branch, tag or commit label to fetch configuration from"
+  sectionName: "CONFIG_SERVER_LABEL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "main"
+spring.cloud.config.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Server Password"
+  description: "Basic auth password for connecting to the Spring Cloud Config Server"
+  sectionName: "CONFIG_SERVER_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "config-server-password"
+spring.cloud.config.uri:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Server URI"
+  description: "Base URL of the Spring Cloud Config Server instance"
+  sectionName: "CONFIG_SERVER_URI"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://localhost:8761/config"
+spring.cloud.config.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config Server Username"
+  description: "Basic auth username for connecting to the Spring Cloud Config Server"
+  sectionName: "CONFIG_SERVER_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "config-server-admin"
+spring.cloud.gateway.httpclient.pool.max-connections:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Gateway HTTP Client Max Connections"
+  description: "Maximum number of connections in the reactive HTTP client pool used\
+    \ by the API gateway"
+  sectionName: "GATEWAY_MAX_CONNECTIONS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 1000
