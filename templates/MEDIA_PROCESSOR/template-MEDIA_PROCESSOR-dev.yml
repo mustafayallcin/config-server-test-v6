@@ -1,0 +1,975 @@
+application.analytic.analyzer-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Analyzer Name"
+  description: "Name of the analytics engine to use (e.g. verint, knovvu)"
+  sectionName: "ANALYTIC_ANALYZER_NAME"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "verint"
+application.analytic.bypass-SVR-check:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Analytic Bypass SVR Check"
+  description: "Bypasses the voice server availability check before sending files\
+    \ for analysis"
+  sectionName: "ANALYTIC_BYPASS_SVR_CHECK"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+application.analytic.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Analytic Enabled"
+  description: "Enables or disables speech analytics processing"
+  sectionName: "ANALYTIC_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.analytic.map-time-to-live-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Analytic Map TTL (hours)"
+  description: "Time-to-live in hours for in-memory analytics tracking map entries"
+  sectionName: "ANALYTIC_MAP_TTL_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1
+application.analytic.offset-in-seconds:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Analytic Offset (seconds)"
+  description: "Delay in seconds applied before sending a completed recording for\
+    \ analytics processing"
+  sectionName: "ANALYTIC_OFFSET_SECONDS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 300
+application.analytic.task-executor.core-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Analytic Task Executor Core Pool Size"
+  description: "Core thread pool size for the analytics task executor"
+  sectionName: "ANALYTIC_EXECUTOR_CORE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 4
+application.analytic.task-executor.maximum-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Analytic Task Executor Max Pool Size"
+  description: "Maximum thread pool size for the analytics task executor"
+  sectionName: "ANALYTIC_EXECUTOR_MAX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 6
+application.analytic.verint.uri:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Verint Analytics URI"
+  description: "Base URL of the Verint speech analytics server"
+  sectionName: "ANALYTIC_VERINT_URI"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "http://127.0.0.1:80"
+application.archive.map-time-to-live-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Archive Map TTL (hours)"
+  description: "Time-to-live in hours for in-memory archive tracking map entries"
+  sectionName: "ARCHIVE_MAP_TTL_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1
+application.archive.min-record-duration-in-seconds:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Min Record Duration (seconds)"
+  description: "Minimum recording duration in seconds required before a file is archived"
+  sectionName: "ARCHIVE_MIN_RECORD_DURATION_SECONDS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 2
+application.archive.min-spx-resource-length-in-bytes:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Min SPX Resource Length (bytes)"
+  description: "Minimum file size in bytes for SPX audio files to be eligible for\
+    \ archiving"
+  sectionName: "ARCHIVE_MIN_SPX_LENGTH_BYTES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 0
+application.archive.min-wav-resource-length-in-bytes:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Min WAV Resource Length (bytes)"
+  description: "Minimum file size in bytes for WAV audio files to be eligible for\
+    \ archiving"
+  sectionName: "ARCHIVE_MIN_WAV_LENGTH_BYTES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 0
+application.archive.task-executor.core-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Archive Task Executor Core Pool Size"
+  description: "Core thread pool size for the archive task executor"
+  sectionName: "ARCHIVE_EXECUTOR_CORE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 4
+application.archive.task-executor.maximum-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Archive Task Executor Max Pool Size"
+  description: "Maximum thread pool size for the archive task executor"
+  sectionName: "ARCHIVE_EXECUTOR_MAX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 6
+application.compression.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Compression Enabled"
+  description: "Enables or disables media file compression processing"
+  sectionName: "COMPRESSION_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.compression.map-time-to-live-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Compression Map TTL (hours)"
+  description: "Time-to-live in hours for in-memory compression tracking map entries"
+  sectionName: "COMPRESSION_MAP_TTL_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1
+application.compression.task-executor.core-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Compression Task Executor Core Pool Size"
+  description: "Core thread pool size for the compression task executor"
+  sectionName: "COMPRESSION_EXECUTOR_CORE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 4
+application.compression.task-executor.maximum-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Compression Task Executor Max Pool Size"
+  description: "Maximum thread pool size for the compression task executor"
+  sectionName: "COMPRESSION_EXECUTOR_MAX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 6
+application.compression.webm-command:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "WebM Compression Command Template"
+  description: "FFmpeg command template for compressing video files to WebM format"
+  sectionName: "COMPRESSION_WEBM_COMMAND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "-y -i {0} -c:v libvpx -f webm {1}"
+application.conversion.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Conversion Enabled"
+  description: "Enables or disables media format conversion processing"
+  sectionName: "CONVERSION_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.conversion.h264-command:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "H264 Conversion Command Template"
+  description: "FFmpeg command template for converting raw H264 streams to MP4"
+  sectionName: "CONVERSION_H264_COMMAND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "-framerate 24 -i {0} -c copy -f mp4 {1}"
+application.conversion.ivf-command:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "IVF Conversion Command Template"
+  description: "FFmpeg command template for converting IVF video files to MP4 format"
+  sectionName: "CONVERSION_IVF_COMMAND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "-y -i {0} -c:v libx264 -f mp4 {1}"
+application.conversion.map-time-to-live-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Conversion Map TTL (hours)"
+  description: "Time-to-live in hours for in-memory conversion tracking map entries"
+  sectionName: "CONVERSION_MAP_TTL_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1
+application.conversion.min-mjr-last-modified-time-elapsed-in-minutes:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Min MJR Last Modified Time Elapsed (minutes)"
+  description: "Minimum elapsed time in minutes since last modification before an\
+    \ MJR file is eligible for conversion"
+  sectionName: "CONVERSION_MIN_MJR_ELAPSED_MINUTES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 3
+application.conversion.task-executor.core-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Conversion Task Executor Core Pool Size"
+  description: "Core thread pool size for the conversion task executor"
+  sectionName: "CONVERSION_EXECUTOR_CORE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 4
+application.conversion.task-executor.maximum-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Conversion Task Executor Max Pool Size"
+  description: "Maximum thread pool size for the conversion task executor"
+  sectionName: "CONVERSION_EXECUTOR_MAX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 6
+application.conversion.wav-command:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "WAV Conversion Command Template"
+  description: "FFmpeg command template for converting audio files to WAV format.\
+    \ Use {0} for input and {1} for output path."
+  sectionName: "CONVERSION_WAV_COMMAND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "-i {0} -acodec pcm_u8 -ar 8000 -f wav {1}"
+application.encryption.AES-key-version:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "AES Key Version"
+  description: "Version identifier of the AES encryption key in use"
+  sectionName: "ENCRYPTION_AES_KEY_VERSION"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "v1"
+application.encryption.command:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Encryption Command Template"
+  description: "OpenSSL command template for encrypting media files. Use {0} input,\
+    \ {1} output, {2} passphrase."
+  sectionName: "ENCRYPTION_COMMAND"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "enc -p -aes-256-cbc -salt -in {0} -out {1} -pbkdf2 -pass pass:{2}"
+application.encryption.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Media Encryption Enabled"
+  description: "Enables or disables AES encryption of archived media files"
+  sectionName: "ENCRYPTION_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.encryption.extension:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Encrypted File Extension"
+  description: "File extension appended to encrypted media files (e.g. aes)"
+  sectionName: "ENCRYPTION_FILE_EXTENSION"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "aes"
+application.encryption.map-time-to-live-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Encryption Map TTL (hours)"
+  description: "Time-to-live in hours for in-memory encryption tracking map entries"
+  sectionName: "ENCRYPTION_MAP_TTL_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1
+application.encryption.resource-hash-type:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Encryption Resource Hash Type"
+  description: "Hashing algorithm used to verify encrypted media file integrity (e.g.\
+    \ SHA512)"
+  sectionName: "ENCRYPTION_HASH_TYPE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "SHA512"
+application.encryption.task-executor.core-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Encryption Task Executor Core Pool Size"
+  description: "Core thread pool size for the encryption task executor"
+  sectionName: "ENCRYPTION_EXECUTOR_CORE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 4
+application.encryption.task-executor.maximum-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Encryption Task Executor Max Pool Size"
+  description: "Maximum thread pool size for the encryption task executor"
+  sectionName: "ENCRYPTION_EXECUTOR_MAX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 6
+application.management.ai-talk-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "AI Talk Integration Enabled"
+  description: "Enables or disables AI-based speech analytics integration"
+  sectionName: "MANAGEMENT_AI_TALK_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.management.alcatel-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Alcatel Integration Enabled"
+  description: "Enables or disables Alcatel PBX recorder integration"
+  sectionName: "MANAGEMENT_ALCATEL_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.management.capturer-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Capturer Integration Enabled"
+  description: "Enables or disables the screen/audio capturer integration"
+  sectionName: "MANAGEMENT_CAPTURER_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.management.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Management Enabled"
+  description: "Enables or disables the media management component"
+  sectionName: "MANAGEMENT_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+application.management.genesys-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Genesys Integration Enabled"
+  description: "Enables or disables Genesys recorder integration"
+  sectionName: "MANAGEMENT_GENESYS_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.management.janus-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Janus Integration Enabled"
+  description: "Enables or disables Janus WebRTC gateway integration"
+  sectionName: "MANAGEMENT_JANUS_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.management.sip-rec-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "SIP-REC Integration Enabled"
+  description: "Enables or disables SIP-REC protocol-based recording integration"
+  sectionName: "MANAGEMENT_SIP_REC_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.management.sisphone-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "SisPhone Integration Enabled"
+  description: "Enables or disables SisPhone recorder integration"
+  sectionName: "MANAGEMENT_SISPHONE_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+application.mjr-merge.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "MJR Merge Enabled"
+  description: "Enables or disables merging of MJR (Janus RTP) recording files"
+  sectionName: "MJR_MERGE_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.mjr-merge.map-time-to-live-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "MJR Merge Map TTL (hours)"
+  description: "Time-to-live in hours for in-memory MJR merge tracking map entries"
+  sectionName: "MJR_MERGE_MAP_TTL_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1
+application.mjr-merge.task-executor.core-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "MJR Merge Task Executor Core Pool Size"
+  description: "Core thread pool size for the MJR merge task executor"
+  sectionName: "MJR_MERGE_EXECUTOR_CORE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 4
+application.mjr-merge.task-executor.maximum-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "MJR Merge Task Executor Max Pool Size"
+  description: "Maximum thread pool size for the MJR merge task executor"
+  sectionName: "MJR_MERGE_EXECUTOR_MAX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 6
+application.mjr-merge.wait-finish-mjr-write-in-minutes:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "MJR Merge Wait Finish Write (minutes)"
+  description: "Minutes to wait after last MJR write before starting merge process"
+  sectionName: "MJR_MERGE_WAIT_FINISH_MINUTES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1
+application.party-merge.ffmpeg-threads:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Party Merge FFmpeg Thread Count"
+  description: "Number of threads allocated to FFmpeg for party merge video processing"
+  sectionName: "PARTY_MERGE_FFMPEG_THREADS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 2
+application.party-merge.map-time-to-live-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Party Merge Map TTL (hours)"
+  description: "Time-to-live in hours for in-memory party merge tracking map entries"
+  sectionName: "PARTY_MERGE_MAP_TTL_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1
+application.party-merge.resolution-height:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Party Merge Resolution Height (px)"
+  description: "Output video resolution height in pixels for merged party recordings"
+  sectionName: "PARTY_MERGE_RESOLUTION_HEIGHT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 720
+application.party-merge.task-executor.core-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Party Merge Task Executor Core Pool Size"
+  description: "Core thread pool size for the party merge task executor"
+  sectionName: "PARTY_MERGE_EXECUTOR_CORE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 4
+application.party-merge.task-executor.maximum-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Party Merge Task Executor Max Pool Size"
+  description: "Maximum thread pool size for the party merge task executor"
+  sectionName: "PARTY_MERGE_EXECUTOR_MAX_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 6
+application.party-merge.uploader-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Party Merge Uploader Name"
+  description: "Name of the uploader component used during party merge (e.g. voiceserver)"
+  sectionName: "PARTY_MERGE_UPLOADER_NAME"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "voiceserver"
+application.party-merge.voice-server.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Party Merge Voice Server Access Token"
+  description: "Access token for authenticating with the voice server during party\
+    \ merge"
+  sectionName: "PARTY_MERGE_VOICE_SERVER_ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "party-merge-access-token"
+application.party-merge.voice-server.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Party Merge Voice Server URL"
+  description: "URL of the voice server API used to fetch resources for party merging"
+  sectionName: "PARTY_MERGE_VOICE_SERVER_URL"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "http://127.0.0.1:28005/voiceserver/api/resources/"
+application.process.analytic-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Analytic Subdirectory"
+  description: "Subdirectory under the base path for files queued for analytics processing"
+  sectionName: "PROCESS_ANALYTIC_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/--process/analytic/"
+application.process.archive-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Archive Subdirectory"
+  description: "Subdirectory under the base path where archived media files are stored"
+  sectionName: "PROCESS_ARCHIVE_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/process/archive/"
+application.process.base-process-path:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Base Process Path"
+  description: "Root directory path where all media processing subdirectories are\
+    \ located"
+  sectionName: "PROCESS_BASE_PATH"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "/opt/sistas/voicedata/"
+application.process.compression-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Compression Subdirectory"
+  description: "Subdirectory under the base path for files being compressed"
+  sectionName: "PROCESS_COMPRESSION_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/process/compression/"
+application.process.conversion-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Conversion Subdirectory"
+  description: "Subdirectory under the base path for files being converted"
+  sectionName: "PROCESS_CONVERSION_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/process/conversion/"
+application.process.encryption-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Encryption Subdirectory"
+  description: "Subdirectory under the base path for files being encrypted"
+  sectionName: "PROCESS_ENCRYPTION_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/process/encryption/"
+application.process.genesys-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Genesys Subdirectory"
+  description: "Subdirectory under the base path for Genesys recorder source files"
+  sectionName: "PROCESS_GENESYS_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/genesys/"
+application.process.merge-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Merge Subdirectory"
+  description: "Subdirectory under the base path for files being merged"
+  sectionName: "PROCESS_MERGE_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/process/merge/"
+application.process.party-merge-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Party Merge Subdirectory"
+  description: "Subdirectory under the base path for party merge source files"
+  sectionName: "PROCESS_PARTY_MERGE_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/party-merge/"
+application.process.pooling-file-limit:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Pooling File Limit"
+  description: "Maximum number of files picked up per polling cycle"
+  sectionName: "PROCESS_POOLING_FILE_LIMIT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 1000
+application.process.pooling-period-in-minutes:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Pooling Period (minutes)"
+  description: "Interval in minutes between file system polling cycles"
+  sectionName: "PROCESS_POOLING_PERIOD_MINUTES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 2
+application.process.reconciliation-period-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Reconciliation Period (hours)"
+  description: "Interval in hours between reconciliation scans"
+  sectionName: "PROCESS_RECONCILIATION_PERIOD_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 24
+application.process.reconciliation-resource-max-age-in-hours:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Reconciliation Resource Max Age (hours)"
+  description: "Maximum age in hours of a resource before it is included in reconciliation"
+  sectionName: "PROCESS_RECONCILIATION_MAX_AGE_HOURS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 24
+application.process.reconciliation-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Reconciliation Subdirectory"
+  description: "Subdirectory under the base path used for reconciliation file scanning"
+  sectionName: "PROCESS_RECONCILIATION_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/reconciliation/"
+application.process.recording-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Recording Subdirectory"
+  description: "Subdirectory under the base path where raw recording wave files are\
+    \ stored"
+  sectionName: "PROCESS_RECORDING_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/wavefiles/"
+application.process.retention-in-days:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Retention Period (days)"
+  description: "Number of days processed media files are retained before deletion"
+  sectionName: "PROCESS_RETENTION_DAYS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 30
+application.process.stuck-subdirectory-name:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Stuck Subdirectory"
+  description: "Subdirectory under the base path where stuck/failed processing files\
+    \ are moved"
+  sectionName: "PROCESS_STUCK_SUBDIR"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "datafiles/stuck/"
+application.security.key:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Application Encryption Key"
+  description: "Internal symmetric encryption key used for application-level data\
+    \ security"
+  sectionName: "APPLICATION_SECURITY_KEY"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "encryption-key"
+application.storage.amazon-s3-storage-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Amazon S3 Storage Enabled"
+  description: "Enables storing media files on Amazon S3"
+  sectionName: "STORAGE_S3_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.storage.archive-type:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Archive Type"
+  description: "Storage backend type used for archiving media files (e.g. file_system,\
+    \ s3)"
+  sectionName: "STORAGE_ARCHIVE_TYPE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "file_system"
+application.storage.local-storage-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Local Storage Enabled"
+  description: "Enables storing media files on the local file system"
+  sectionName: "STORAGE_LOCAL_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+application.storage.remote-storage-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Remote Storage Enabled"
+  description: "Enables storing media files on a remote storage backend"
+  sectionName: "STORAGE_REMOTE_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.stuck.fail-count:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Stuck Fail Count"
+  description: "Number of consecutive failures before a file is marked as stuck"
+  sectionName: "STUCK_FAIL_COUNT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 5
+application.stuck.operation-type:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Stuck Operation Type"
+  description: "Action to take when a file is marked as stuck (e.g. move_to_stuck,\
+    \ delete)"
+  sectionName: "STUCK_OPERATION_TYPE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "move_to_stuck"
+eureka.client.service-url.defaultZone:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Eureka Default Zone URL"
+  description: "Eureka server URL including basic auth credentials for service registration"
+  sectionName: "EUREKA_DEFAULT_ZONE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://admin:password@localhost:8761/eureka/"
+kafka.bootstrap-servers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Bootstrap Servers"
+  description: "Comma-separated list of Kafka broker addresses"
+  sectionName: "KAFKA_BOOTSTRAP_SERVERS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:9092"
+kafka.consumer.group.id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Consumer Group ID"
+  description: "Consumer group ID for the main Kafka consumer"
+  sectionName: "KAFKA_CONSUMER_GROUP_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "media-processor"
+kafka.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Kafka Enabled"
+  description: "Enables or disables Kafka messaging integration"
+  sectionName: "KAFKA_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+kafka.fromConversationLoggerToMediaProcessorTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Topic - ConversationLogger to MediaProcessor"
+  description: "Kafka topic name for messages sent from ConversationLogger to MediaProcessor"
+  sectionName: "KAFKA_TOPIC_CL_TO_MP"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_CONVERSATION_LOGGER_TO_MEDIA_PROCESSOR_TOPIC"
+kafka.fromMediaProcessorToConversationLoggerTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Topic - MediaProcessor to ConversationLogger"
+  description: "Kafka topic name for messages sent from MediaProcessor to ConversationLogger"
+  sectionName: "KAFKA_TOPIC_MP_TO_CL"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "FROM_MEDIA_PROCESSOR_TO_CONVERSATION_LOGGER_TOPIC"
+kafka.generalMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka General Message Topic"
+  description: "Kafka topic name for general broadcast messages"
+  sectionName: "KAFKA_GENERAL_MESSAGE_TOPIC"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "GENERAL_MESSAGE_TOPIC"
+kafka.sendAckTimeoutSeconds:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Kafka Send Ack Timeout (seconds)"
+  description: "Maximum time in seconds to wait for Kafka send acknowledgement"
+  sectionName: "KAFKA_SEND_ACK_TIMEOUT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 10
+security.api-access.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "API Access Token"
+  description: "Static bearer token used to secure internal API endpoints"
+  sectionName: "API_ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "api-access-token"
+server.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Server Port"
+  description: "HTTP port the application listens on"
+  sectionName: "SERVER_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 8082
+spring.cloud.stream.kafka.binder.brokers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Stream Binder Brokers"
+  description: "Kafka broker address used by Spring Cloud Stream binder"
+  sectionName: "KAFKA_STREAM_BINDER_BROKERS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:9092"
+spring.security.oauth2.client.provider.oidc.issuer-uri:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "OIDC Issuer URI"
+  description: "Keycloak realm issuer URI used for OAuth2 token validation"
+  sectionName: "OIDC_ISSUER_URI"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+spring.security.oauth2.client.registration.oidc.client-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "OAuth2 Client ID"
+  description: "OAuth2 client ID registered in Keycloak for this service"
+  sectionName: "OAUTH2_CLIENT_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "sistas-voice"
+spring.security.oauth2.client.registration.oidc.client-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "OAuth2 Client Secret"
+  description: "OAuth2 client secret registered in Keycloak for this service"
+  sectionName: "OAUTH2_CLIENT_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "oauth2-client-secret"
+spring.servlet.multipart.max-file-size:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Multipart Max File Size"
+  description: "Maximum size of a single uploaded file (e.g. 100MB)"
+  sectionName: "MULTIPART_MAX_FILE_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "100MB"
+spring.servlet.multipart.max-request-size:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Multipart Max Request Size"
+  description: "Maximum total size of a multipart HTTP request (e.g. 100MB)"
+  sectionName: "MULTIPART_MAX_REQUEST_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "100MB"
