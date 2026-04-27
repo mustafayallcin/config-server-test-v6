@@ -1,0 +1,60 @@
+application:
+  microservice-configuration:
+    hazelcast:
+      discovery-mechanism: "lite_member"
+      lite-member:
+        cluster-members: "statserver"
+        instance-port-padding: 5701
+      native-client:
+        password: "{cipher}de704dec5f8e40b3a21670b57e952c5cecc0e34c411cc8917f5fde1e9cd82c47"
+        url: "localhost:5701"
+        username: "{cipher}5dad49e6370b7d76cc0fca24652f328483654afb177d0ad8dfb2362af6ace077"
+  service-time-configuration:
+    service-time1-lower-bound: 0
+    service-time1-upper-bound: 10
+    service-time2-lower-bound: 10
+    service-time2-upper-bound: 20
+    service-time3-lower-bound: 20
+    service-time3-upper-bound: 30
+    service-time4-lower-bound: 30
+    service-time4-upper-bound: 60
+  svr-configuration:
+    url: "http://127.0.0.1:8080"
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://admin:admin@localhost:8761/eureka/"
+kafka:
+  agentMessageTopic: "AGENT_MESSAGE_TOPIC"
+  bootstrap-servers: "127.0.0.1:9092"
+  callMessageTopic: "CALL_MESSAGE_TOPIC"
+  configChangeTopic: "CONFIG_CHANGE_TOPIC"
+  generalMessageTopic: "GENERAL_MESSAGE_TOPIC"
+scheduled:
+  clear-all-statistics:
+    cron: "0 0 0 1/1 * ?"
+  config:
+    changed-states-interval: 10000
+    changed-statistics-interval: 30000
+    cron: "0 0/10 * * * ?"
+security:
+  api-access:
+    access-token: "{cipher}2abd4722a0ea234f2d60ea1c82c8802eebdc00a2ab75773d455bd91c1ce80a6eb0574717b6efa6761273a6f12af97bd5"
+server:
+  port: 26081
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: "127.0.0.1:9092"
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+        registration:
+          oidc:
+            client-id: "chatbot"
+            client-secret: "{cipher}bb6357dc784876787e4baeebe0faa13fee2c4d5aaede10004845324de3e2ad3ff75ca4845a6e309d6cdf7ad18e47170f3a7f21fddb8aea95cdd67cd463e3c239"
