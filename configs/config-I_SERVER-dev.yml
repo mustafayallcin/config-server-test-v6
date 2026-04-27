@@ -1,0 +1,87 @@
+application:
+  active-calls-properties:
+    shutdown-button-threshold-minutes: 60
+  after-conversation-properties:
+    duration-in-seconds: 10
+    reason: "after-conversation"
+    reason-code: 0
+    state: "NOT_READY"
+  agent-login-properties:
+    login-state: "READY"
+    reason: "Login"
+    reason-code: 0
+  auto-shutdown-properties:
+    auto-shutdown-cron: "0 */5 * * * *"
+    enabled: true
+    threshold-duration-in-milli-seconds: 21600000
+  health-management:
+    external-targets[0]:
+      name: "SistasSVR SipRec"
+      url: "https://siprec.example.com:4301/healthchecks-api"
+    scheduler-cron: "*/5 * * * * *"
+    scheduler-enabled: true
+  microservice-configuration:
+    hazelcast:
+      discovery-mechanism: "lite_member"
+      lite-member:
+        cluster-members: "iserver"
+        instance-port-padding: 5701
+      native-client:
+        password: "{cipher}81c28330f23022100e15ead892cfc1c95b1dd77cf9a107ab4bc02640fd597553"
+        url: "localhost:5701"
+        username: "{cipher}82feb40c73f4c0d9f319f953c4355552f30081a440d3bf57029bdff8ecfc847a"
+  providers:
+    alcatel-enabled: false
+    cc-enabled: false
+    genesys-enabled: false
+    sisphone-enabled: true
+  socket-timeout-duration-in-seconds: 5
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://admin:admin@localhost:8761/eureka/"
+kafka:
+  agentMessageTopic: "AGENT_MESSAGE_TOPIC"
+  bootstrap-servers: "127.0.0.1:9092"
+  callMessageTopic: "CALL_MESSAGE_TOPIC"
+  configChangeTopic: "CONFIG_CHANGE_TOPIC"
+  consumer:
+    group:
+      id: "i-server"
+  fromAlcatelToInteractionTopic: "FROM_ALCATEL_TO_INTERACTION_TOPIC"
+  fromGenesysEngageToInteractionTopic: "FROM_GENESYS_ENGAGE_TO_INTERACTION_TOPIC"
+  fromInteractionToAlcatelTopic: "FROM_INTERACTION_TO_ALCATEL_TOPIC"
+  fromInteractionToGenesysEngageTopic: "FROM_INTERACTION_TO_GENESYS_ENGAGE_TOPIC"
+  fromInteractionToSIPTopic: "FROM_INTERACTION_TO_SIP_TOPIC"
+  fromInteractionToSisPhoneTopic: "FROM_INTERACTION_TO_SISPHONE_TOPIC"
+  fromSIPToInteractionTopic: "FROM_SIP_TO_INTERACTION_TOPIC"
+  fromSisPhoneToInteractionTopic: "FROM_SISPHONE_TO_INTERACTION_TOPIC"
+  generalMessageTopic: "GENERAL_MESSAGE_TOPIC"
+  producer:
+    acks: "all"
+    retries: 3
+  requestMakeCallTopic: "FROM_INTERACTION_TO_SINGLE_SIP_TOPIC"
+  sendAckTimeoutSeconds: 10
+  topics:
+    retention: 60000
+security:
+  api-access:
+    access-token: "{cipher}ad614d0ef7e6b9be392f6e3854184ae72775fc56a69ca7b17f5f31409cce6ccce3c36e2648e3eff0d9c303cf30931e5a"
+server:
+  port: 26082
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: "127.0.0.1:9092"
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+        registration:
+          oidc:
+            client-id: "chatbot"
+            client-secret: "{cipher}1fcb58ebef9631cfc3451aaf59c13aa4329f9a41d104c91cd9e72ae6be4fb07a8b40eaf763d9abf0e96d5f979a756150c3afa9b47f3b6c57b1df6a21ae19b8de"
