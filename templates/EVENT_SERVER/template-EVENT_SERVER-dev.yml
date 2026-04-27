@@ -1,0 +1,130 @@
+eureka.client.service-url.defaultZone:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Eureka Default Zone URL"
+  description: "Eureka server URL including basic auth credentials for service registration"
+  sectionName: "EUREKA_DEFAULT_ZONE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
+kafka.agentMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Agent Message Topic"
+  description: "Kafka topic name for agent status and state messages"
+  sectionName: "KAFKA_AGENT_MESSAGE_TOPIC"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "AGENT_MESSAGE_TOPIC"
+kafka.bootstrap-servers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Bootstrap Servers"
+  description: "Comma-separated list of Kafka broker addresses"
+  sectionName: "KAFKA_BOOTSTRAP_SERVERS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:9092"
+kafka.callMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Call Message Topic"
+  description: "Kafka topic name for call event messages"
+  sectionName: "KAFKA_CALL_MESSAGE_TOPIC"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "CALL_MESSAGE_TOPIC"
+kafka.generalMessageTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka General Message Topic"
+  description: "Kafka topic name for general broadcast messages"
+  sectionName: "KAFKA_GENERAL_MESSAGE_TOPIC"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "GENERAL_MESSAGE_TOPIC"
+server.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Server Port"
+  description: "HTTP port the application listens on"
+  sectionName: "SERVER_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 26084
+spring.cloud.stream.kafka.binder.brokers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Stream Binder Brokers"
+  description: "Kafka broker address used by Spring Cloud Stream binder"
+  sectionName: "KAFKA_STREAM_BINDER_BROKERS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:9092"
+spring.datasource.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Password"
+  description: "Database login password"
+  sectionName: "DATASOURCE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "datasource-password"
+spring.datasource.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource URL"
+  description: "Database connection URL (MSSQL / MySQL / PostgreSQL)"
+  sectionName: "DATASOURCE_URL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "jdbc:sqlserver://localhost:1433;database=EventServer;encrypt=false"
+spring.datasource.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Username"
+  description: "Database login username"
+  sectionName: "DATASOURCE_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "datasource-username"
+spring.security.oauth2.client.provider.oidc.issuer-uri:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "OIDC Issuer URI"
+  description: "Keycloak realm issuer URI used for OAuth2 token validation"
+  sectionName: "OIDC_ISSUER_URI"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "https://sistas-keycloak.sistas.com.tr/realms/sistas"
+spring.security.oauth2.client.registration.oidc.client-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "OAuth2 Client ID"
+  description: "OAuth2 client ID registered in Keycloak for this service"
+  sectionName: "OAUTH2_CLIENT_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "chatbot"
+spring.security.oauth2.client.registration.oidc.client-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "OAuth2 Client Secret"
+  description: "OAuth2 client secret registered in Keycloak for this service"
+  sectionName: "OAUTH2_CLIENT_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "oauth2-client-secret"
