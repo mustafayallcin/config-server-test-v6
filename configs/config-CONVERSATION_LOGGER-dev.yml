@@ -74,5 +74,5 @@ spring:
             client-secret: "{cipher}d6bd254bce660a42f78d1531ef76065db0bb66b3aa6657c0f40af198da833ab39b913f866cdda5928d123095bcd5700775a0083764bb0e8dc9fbb2c0f4bec856"
 user-data-config:
   cron: "0 0 * * * ?"
-  instance-name: "USER_DATA"
-  profile: "1"
+  instance-name: "config-USER_DATA"
+  profile: "1.0.2"
