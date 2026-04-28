@@ -42,9 +42,9 @@ application:
     key: "{cipher}299f95a4d2f0d447452d0853db74f1e1edac2d4142bfa3ddc8b420146520c41c8e85c47ed86217bde27605179cf62688"
   sis-phone-properties:
     enabled: true
-    password: "{cipher}4b4e5951d65d4cd66b063c8d1c405e0170543a1e43ab23da9a3d888e5d8dbc3a"
+    password: "{cipher}49c1ebd6ddd51cbf1665187bb33b7e729abd7a802f91c058de9ea07e1b445a14"
     url: "http://192.168.12.152/sisphone"
-    username: "{cipher}f00f71caacc89a7a6d2c076355bc2c0796345eee0d25d2e422c203c1203e5056"
+    username: "{cipher}a5017951fd7dccab7b8491e7a2cafae41d01b6320d20a52b542681e3c41a846d"
 batch-synchronization:
   enabled: false
 eureka:
