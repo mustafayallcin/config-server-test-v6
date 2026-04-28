@@ -1,0 +1,202 @@
+userData1:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 1 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 1'e yazılacağını belirler (Ö\
+    rn. CustomerID)"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData1"
+userData10:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 10 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 10'a yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData10"
+userData11:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 11 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 11'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData11"
+userData12:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 12 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 12'ye yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData12"
+userData13:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 13 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 13'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData13"
+userData14:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 14 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 14'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData14"
+userData15:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 15 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 15'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData15"
+userData16:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 16 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 16'ya yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData16"
+userData17:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 17 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 17'ye yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData17"
+userData18:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 18 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 18'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData18"
+userData19:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 19 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 19'a yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData19"
+userData2:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 2 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 2'ye yazılacağını belirler (Ö\
+    rn. Language)"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData2"
+userData20:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 20 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 20'ye yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData20"
+userData3:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 3 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 3'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData3"
+userData4:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 4 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 4'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData4"
+userData5:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 5 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 5'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData5"
+userData6:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 6 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 6'ya yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData6"
+userData7:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 7 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 7'ye yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData7"
+userData8:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 8 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 8'e yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData8"
+userData9:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "User Data 9 Field Mapping"
+  description: "PBX'ten gelen hangi verinin User Data 9'a yazılacağını belirler"
+  sectionName: "USER_DATA_MAPPINGS"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "userData9"
