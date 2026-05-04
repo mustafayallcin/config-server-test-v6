@@ -1,0 +1,520 @@
+application.config-server.keycloak-config.client-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config-Server Keycloak Client ID"
+  description: "Client ID used by the config server keycloak integration"
+  sectionName: "CONFIG_SERVER_KEYCLOAK_CLIENT_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "sistas-voice"
+application.config-server.keycloak-config.client-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config-Server Keycloak Client Secret"
+  description: "Client secret used by the config server keycloak integration"
+  sectionName: "CONFIG_SERVER_KEYCLOAK_CLIENT_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "keycloak-client-secret"
+application.config-server.keycloak-config.grant-type:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config-Server Keycloak Grant Type"
+  description: "OAuth2 grant type for config server keycloak token retrieval"
+  sectionName: "CONFIG_SERVER_KEYCLOAK_GRANT_TYPE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "client_credentials"
+application.config-server.keycloak-config.keycloak-url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Config-Server Keycloak Token URL"
+  description: "Full token endpoint URL for config server keycloak authentication"
+  sectionName: "CONFIG_SERVER_KEYCLOAK_URL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "https://sistas-keycloak.sistas.com.tr/realms/sistas/protocol/openid-connect/token"
+application.conversation-share.open-count:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Conversation Share Open Count"
+  description: "Maximum number of times a shared conversation link can be opened"
+  sectionName: "CONVERSATION_SHARE_OPEN_COUNT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 5
+application.elasticsearch.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Elasticsearch Enabled"
+  description: "Enables or disables Elasticsearch indexing and search features"
+  sectionName: "ELASTICSEARCH_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.elasticsearch.scheduled.reindex-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Reindex Cron Expression"
+  description: "Cron expression controlling when scheduled reindexing runs"
+  sectionName: "ELASTICSEARCH_REINDEX_CRON"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "0 */30 * ? * *"
+application.elasticsearch.scheduled.reindex-enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Elasticsearch Scheduled Reindex Enabled"
+  description: "Enables periodic scheduled reindexing of Elasticsearch data"
+  sectionName: "ELASTICSEARCH_REINDEX_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+application.elasticsearch.skip-ssl:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Elasticsearch Skip SSL Verification"
+  description: "Skips SSL certificate verification for Elasticsearch connections"
+  sectionName: "ELASTICSEARCH_SKIP_SSL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+application.enabled-media-file-auto-delete:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Media File Auto Delete Enabled"
+  description: "Enables automatic deletion of media files on schedule"
+  sectionName: "MEDIA_FILE_AUTO_DELETE_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+application.hazelcast.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Hazelcast Port"
+  description: "Network port Hazelcast cluster members listen on"
+  sectionName: "HAZELCAST_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 5701
+application.keycloak-admin.app-realm-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Realm ID"
+  description: "The realm where the application client is registered"
+  sectionName: "KEYCLOAK_APP_REALM_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "app-realm"
+application.keycloak-admin.app-resource-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource (Client) ID"
+  description: "OAuth2 client ID registered in Keycloak for this application"
+  sectionName: "KEYCLOAK_APP_RESOURCE_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "app-resource-id"
+application.keycloak-admin.app-resource-secret:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak App Resource Secret"
+  description: "OAuth2 client secret registered in Keycloak for this application"
+  sectionName: "KEYCLOAK_APP_RESOURCE_SECRET"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "keycloak-resource-secret"
+application.keycloak-admin.client-id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Client ID"
+  description: "Client ID used for Keycloak admin CLI operations (e.g. admin-cli)"
+  sectionName: "KEYCLOAK_ADMIN_CLIENT_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "admin-cli"
+application.keycloak-admin.max-pool-size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Keycloak Admin Max Pool Size"
+  description: "Maximum connection pool size for Keycloak admin client"
+  sectionName: "KEYCLOAK_ADMIN_MAX_POOL_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 10
+application.keycloak-admin.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Password"
+  description: "Keycloak admin console password"
+  sectionName: "KEYCLOAK_ADMIN_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-admin-password"
+application.keycloak-admin.realm:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Realm"
+  description: "Realm used for Keycloak admin operations (typically \"master\")"
+  sectionName: "KEYCLOAK_ADMIN_REALM"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "master"
+application.keycloak-admin.server-url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Server URL"
+  description: "Base URL of the Keycloak server (e.g. https://sistas-keycloak.example.com)"
+  sectionName: "KEYCLOAK_SERVER_URL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "https://sistas-keycloak.sistas.com.tr"
+application.keycloak-admin.trusted-audiences:
+  configValueCount: "LIST"
+  configValueType: "STRING"
+  displayName: "Keycloak Trusted Audiences"
+  description: "Comma-separated list of trusted audience values for JWT validation"
+  sectionName: "KEYCLOAK_TRUSTED_AUDIENCES"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue:
+  - "sistas-eva"
+  - "smart"
+  - "campus"
+  - "sistas-phone"
+  - "chatbot"
+  - "client_credentials"
+application.keycloak-admin.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Keycloak Admin Username"
+  description: "Keycloak admin console username"
+  sectionName: "KEYCLOAK_ADMIN_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "keycloak-admin-username"
+application.media-file-cron:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Media File Cron Expression"
+  description: "Cron expression that triggers the media file processing/cleanup job"
+  sectionName: "MEDIA_FILE_CRON"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "0 28 18 * * *"
+application.media-processor.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Media Processor Enabled"
+  description: "Enables or disables the background media processing component"
+  sectionName: "MEDIA_PROCESSOR_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: false
+application.public-api.devices-by-ip:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Public API Devices By IP"
+  description: "Enables device resolution by IP address in the public API"
+  sectionName: "PUBLIC_API_DEVICES_BY_IP"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: true
+application.security.key:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Application Encryption Key"
+  description: "Internal symmetric encryption key used for application-level data\
+    \ security"
+  sectionName: "APPLICATION_SECURITY_KEY"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "encryption-key"
+application.sis-phone-properties.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "SIS-Phone Integration Enabled"
+  description: "Enables or disables the SIS-Phone integration"
+  sectionName: "SIS_PHONE_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: true
+application.sis-phone-properties.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "SIS-Phone Password"
+  description: "Password for SIS-Phone authentication"
+  sectionName: "SIS_PHONE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "sisphone-password"
+application.sis-phone-properties.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "SIS-Phone URL"
+  description: "Base URL of the SIS-Phone server"
+  sectionName: "SIS_PHONE_URL"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "http://192.168.12.152/sisphone"
+application.sis-phone-properties.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "SIS-Phone Username"
+  description: "Username for SIS-Phone authentication"
+  sectionName: "SIS_PHONE_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "sisphone-username"
+batch-synchronization.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Batch Synchronization Enabled"
+  description: "Enables or disables the batch synchronization job"
+  sectionName: "BATCH_SYNC_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: false
+eureka.client.service-url.defaultZone:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Eureka Default Zone URL"
+  description: "Eureka server URL including basic auth credentials for service registration"
+  sectionName: "EUREKA_DEFAULT_ZONE"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://USERNAME:PASSWORD@localhost:8761/eureka/"
+kafka.bootstrap-servers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Bootstrap Servers"
+  description: "Comma-separated list of Kafka broker addresses"
+  sectionName: "KAFKA_BOOTSTRAP_SERVERS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:9092"
+kafka.configChangeTopic:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Config Change Topic"
+  description: "Kafka topic name used for broadcasting configuration change events"
+  sectionName: "KAFKA_CONFIG_CHANGE_TOPIC"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "CONFIG_CHANGE_TOPIC"
+kafka.consumer.group.id:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Consumer Group ID"
+  description: "Consumer group ID for the main Kafka consumer"
+  sectionName: "KAFKA_CONSUMER_GROUP_ID"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "voice-search"
+kafka.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "Kafka Enabled"
+  description: "Enables or disables Kafka messaging integration"
+  sectionName: "KAFKA_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: true
+kafka.sendAckTimeoutSeconds:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Kafka Send Ack Timeout (seconds)"
+  description: "Maximum time in seconds to wait for Kafka send acknowledgement"
+  sectionName: "KAFKA_SEND_ACK_TIMEOUT"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 10
+not-ready-reason.default-provider:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Not-Ready Reason Default Provider"
+  description: "Default provider name used for agent not-ready reason codes (e.g.\
+    \ sisphone)"
+  sectionName: "NOT_READY_REASON_DEFAULT_PROVIDER"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "sisphone"
+rest-call-process.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Rest Call Process Access Token"
+  description: "Access token used for authenticating outbound REST calls to media/voice\
+    \ servers"
+  sectionName: "REST_CALL_ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "rest-call-access-token"
+rest-call-process.location-server-type:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Location Server Type"
+  description: "Server type for media location resolution (e.g. VOICESERVER)"
+  sectionName: "REST_CALL_LOCATION_SERVER_TYPE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "VOICESERVER"
+rest-call-process.media-location-path:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Media Location Path"
+  description: "File system path where media source files are stored on the voice\
+    \ server"
+  sectionName: "REST_CALL_MEDIA_LOCATION_PATH"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: "/opt/sistas/voiceserver/datafiles/source"
+search-list.size:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Search List Size"
+  description: "Default maximum number of results returned in search queries"
+  sectionName: "SEARCH_LIST_SIZE"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: 50
+security.api-access.access-token:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "API Access Token"
+  description: "Static bearer token used to secure internal API endpoints"
+  sectionName: "API_ACCESS_TOKEN"
+  encrypted: true
+  rule: null
+  restartRequired: false
+  defaultValue: "api-access-token"
+security.api-access.enabled:
+  configValueCount: "SINGLE"
+  configValueType: "BOOLEAN"
+  displayName: "API Access Security Enabled"
+  description: "Enables or disables token-based API access control"
+  sectionName: "API_ACCESS_ENABLED"
+  encrypted: false
+  rule: null
+  restartRequired: false
+  defaultValue: true
+server.port:
+  configValueCount: "SINGLE"
+  configValueType: "LONG"
+  displayName: "Server Port"
+  description: "HTTP port the application listens on"
+  sectionName: "SERVER_PORT"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: 8081
+spring.cloud.stream.kafka.binder.brokers:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Kafka Stream Binder Brokers"
+  description: "Kafka broker address used by Spring Cloud Stream binder"
+  sectionName: "KAFKA_STREAM_BINDER_BROKERS"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "localhost:9092"
+spring.datasource.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Password"
+  description: "Database login password"
+  sectionName: "DATASOURCE_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "datasource-password"
+spring.datasource.url:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource URL"
+  description: "Database connection URL (MSSQL / MySQL / PostgreSQL)"
+  sectionName: "DATASOURCE_URL"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "jdbc:sqlserver://localhost:1433;database=iki-media;encrypt=true;trustServerCertificate=true"
+spring.datasource.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Datasource Username"
+  description: "Database login username"
+  sectionName: "DATASOURCE_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "datasource-username"
+spring.elasticsearch.password:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Password"
+  description: "Password for Elasticsearch authentication"
+  sectionName: "ELASTICSEARCH_PASSWORD"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "elasticsearch-password"
+spring.elasticsearch.uris:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch URI"
+  description: "Connection URI for the Elasticsearch cluster"
+  sectionName: "ELASTICSEARCH_URI"
+  encrypted: false
+  rule: null
+  restartRequired: true
+  defaultValue: "http://localhost:9200"
+spring.elasticsearch.username:
+  configValueCount: "SINGLE"
+  configValueType: "STRING"
+  displayName: "Elasticsearch Username"
+  description: "Username for Elasticsearch authentication"
+  sectionName: "ELASTICSEARCH_USERNAME"
+  encrypted: true
+  rule: null
+  restartRequired: true
+  defaultValue: "elastic"
