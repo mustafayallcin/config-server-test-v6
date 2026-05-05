@@ -51,7 +51,7 @@ server:
 spring:
   datasource:
     password: "{cipher}def35f9358355d3c3acc0eb4fa9337099e63cfc4630e53749bdb71c51bcaf0d0"
-    url: "jdbc:sqlserver://localhost:1433;database=reportserver-v2;encrypt=false"
+    url: "jdbc:sqlserver://localhost:1433;database=reportserver-v3;encrypt=false"
     username: "{cipher}b03ded641de174eca1181297ba5787982f79b0010c828e59e90eb51807b9bb3b"
   mail:
     host: "mail.sistas.com.tr"
